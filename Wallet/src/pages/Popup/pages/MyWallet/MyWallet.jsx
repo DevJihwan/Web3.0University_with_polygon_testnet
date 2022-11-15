@@ -7,6 +7,7 @@ import Footer from '../../component/Footer/Footer';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { SDK } from '../../modules/sdk';
+import { Polygon } from '../../modules/Polygon';
 
 const MyWallet = () => {
     const pair = useRecoilValue(pairState);
@@ -31,6 +32,7 @@ const MyWallet = () => {
 
     const getBalance = async (addr) => {
         setBalance(await SDK.getBalance(addr));
+        Polygon.getTokenBalances();
     }
 
     const faucet = async () => {

@@ -31856,18 +31856,19 @@ var WebSocketClient = /*#__PURE__*/function () {
 
 /***/ }),
 
-/***/ "./node_modules/webpack-dev-server/client/index.js?hot=true&hostname=localhost&port=3030":
+/***/ "./node_modules/webpack-dev-server/client/index.js?hot=true&hostname=localhost&port=3000":
 /*!***********************************************************************************************!*\
-  !*** ./node_modules/webpack-dev-server/client/index.js?hot=true&hostname=localhost&port=3030 ***!
+  !*** ./node_modules/webpack-dev-server/client/index.js?hot=true&hostname=localhost&port=3000 ***!
   \***********************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-var __resourceQuery = "?hot=true&hostname=localhost&port=3030";
+var __resourceQuery = "?hot=true&hostname=localhost&port=3000";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var webpack_hot_log_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! webpack/hot/log.js */ "./node_modules/webpack/hot/log.js");
 /* harmony import */ var webpack_hot_log_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(webpack_hot_log_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _utils_stripAnsi_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/stripAnsi.js */ "./node_modules/webpack-dev-server/client/utils/stripAnsi.js");
+/* harmony import */ var _modules_strip_ansi_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/strip-ansi/index.js */ "./node_modules/webpack-dev-server/client/modules/strip-ansi/index.js");
+/* harmony import */ var _modules_strip_ansi_index_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_strip_ansi_index_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _utils_parseURL_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/parseURL.js */ "./node_modules/webpack-dev-server/client/utils/parseURL.js");
 /* harmony import */ var _socket_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./socket.js */ "./node_modules/webpack-dev-server/client/socket.js");
 /* harmony import */ var _overlay_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./overlay.js */ "./node_modules/webpack-dev-server/client/overlay.js");
@@ -31875,12 +31876,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils_sendMessage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./utils/sendMessage.js */ "./node_modules/webpack-dev-server/client/utils/sendMessage.js");
 /* harmony import */ var _utils_reloadApp_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./utils/reloadApp.js */ "./node_modules/webpack-dev-server/client/utils/reloadApp.js");
 /* harmony import */ var _utils_createSocketURL_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./utils/createSocketURL.js */ "./node_modules/webpack-dev-server/client/utils/createSocketURL.js");
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 /* global __resourceQuery, __webpack_hash__ */
 /// <reference types="webpack/module" />
 
@@ -31897,7 +31892,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * @property {boolean} hot
  * @property {boolean} liveReload
  * @property {boolean} progress
- * @property {boolean | { warnings?: boolean, errors?: boolean, trustedTypesPolicyName?: string }} overlay
+ * @property {boolean | { warnings?: boolean, errors?: boolean }} overlay
  * @property {string} [logging]
  * @property {number} [reconnect]
  */
@@ -31928,44 +31923,15 @@ var options = {
   overlay: false
 };
 var parsedResourceQuery = (0,_utils_parseURL_js__WEBPACK_IMPORTED_MODULE_2__["default"])(__resourceQuery);
-var enabledFeatures = {
-  "Hot Module Replacement": false,
-  "Live Reloading": false,
-  Progress: false,
-  Overlay: false
-};
 
 if (parsedResourceQuery.hot === "true") {
   options.hot = true;
-  enabledFeatures["Hot Module Replacement"] = true;
+  _utils_log_js__WEBPACK_IMPORTED_MODULE_5__.log.info("Hot Module Replacement enabled.");
 }
 
 if (parsedResourceQuery["live-reload"] === "true") {
   options.liveReload = true;
-  enabledFeatures["Live Reloading"] = true;
-}
-
-if (parsedResourceQuery.progress === "true") {
-  options.progress = true;
-  enabledFeatures.Progress = true;
-}
-
-if (parsedResourceQuery.overlay) {
-  try {
-    options.overlay = JSON.parse(parsedResourceQuery.overlay);
-  } catch (e) {
-    _utils_log_js__WEBPACK_IMPORTED_MODULE_5__.log.error("Error parsing overlay options from resource query:", e);
-  } // Fill in default "true" params for partially-specified objects.
-
-
-  if (typeof options.overlay === "object") {
-    options.overlay = _objectSpread({
-      errors: true,
-      warnings: true
-    }, options.overlay);
-  }
-
-  enabledFeatures.Overlay = true;
+  _utils_log_js__WEBPACK_IMPORTED_MODULE_5__.log.info("Live Reloading enabled.");
 }
 
 if (parsedResourceQuery.logging) {
@@ -31990,7 +31956,6 @@ if (options.logging) {
   setAllLogLevel(options.logging);
 }
 
-(0,_utils_log_js__WEBPACK_IMPORTED_MODULE_5__.logEnabledFeatures)(enabledFeatures);
 self.addEventListener("beforeunload", function () {
   status.isUnloading = true;
 });
@@ -32001,6 +31966,7 @@ var onSocketMessage = {
     }
 
     options.hot = true;
+    _utils_log_js__WEBPACK_IMPORTED_MODULE_5__.log.info("Hot Module Replacement enabled.");
   },
   liveReload: function liveReload() {
     if (parsedResourceQuery["live-reload"] === "false") {
@@ -32008,6 +31974,7 @@ var onSocketMessage = {
     }
 
     options.liveReload = true;
+    _utils_log_js__WEBPACK_IMPORTED_MODULE_5__.log.info("Live Reloading enabled.");
   },
   invalid: function invalid() {
     _utils_log_js__WEBPACK_IMPORTED_MODULE_5__.log.info("App updated. Recompiling..."); // Fixes #1042. overlay doesn't clear if errors are fixed but warnings remain.
@@ -32115,7 +32082,7 @@ var onSocketMessage = {
           header = _formatProblem.header,
           body = _formatProblem.body;
 
-      return "".concat(header, "\n").concat((0,_utils_stripAnsi_js__WEBPACK_IMPORTED_MODULE_1__["default"])(body));
+      return "".concat(header, "\n").concat(_modules_strip_ansi_index_js__WEBPACK_IMPORTED_MODULE_1___default()(body));
     });
 
     (0,_utils_sendMessage_js__WEBPACK_IMPORTED_MODULE_6__["default"])("Warnings", printableWarnings);
@@ -32127,8 +32094,7 @@ var onSocketMessage = {
     var needShowOverlayForWarnings = typeof options.overlay === "boolean" ? options.overlay : options.overlay && options.overlay.warnings;
 
     if (needShowOverlayForWarnings) {
-      var trustedTypesPolicyName = typeof options.overlay === "object" && options.overlay.trustedTypesPolicyName;
-      (0,_overlay_js__WEBPACK_IMPORTED_MODULE_4__.show)("warning", _warnings, trustedTypesPolicyName || null);
+      (0,_overlay_js__WEBPACK_IMPORTED_MODULE_4__.show)("warning", _warnings);
     }
 
     if (params && params.preventReloading) {
@@ -32149,7 +32115,7 @@ var onSocketMessage = {
           header = _formatProblem2.header,
           body = _formatProblem2.body;
 
-      return "".concat(header, "\n").concat((0,_utils_stripAnsi_js__WEBPACK_IMPORTED_MODULE_1__["default"])(body));
+      return "".concat(header, "\n").concat(_modules_strip_ansi_index_js__WEBPACK_IMPORTED_MODULE_1___default()(body));
     });
 
     (0,_utils_sendMessage_js__WEBPACK_IMPORTED_MODULE_6__["default"])("Errors", printableErrors);
@@ -32161,8 +32127,7 @@ var onSocketMessage = {
     var needShowOverlayForErrors = typeof options.overlay === "boolean" ? options.overlay : options.overlay && options.overlay.errors;
 
     if (needShowOverlayForErrors) {
-      var trustedTypesPolicyName = typeof options.overlay === "object" && options.overlay.trustedTypesPolicyName;
-      (0,_overlay_js__WEBPACK_IMPORTED_MODULE_4__.show)("error", _errors, trustedTypesPolicyName || null);
+      (0,_overlay_js__WEBPACK_IMPORTED_MODULE_4__.show)("error", _errors);
     }
   },
 
@@ -32883,7 +32848,7 @@ module.exports = function (_ref) {
 
 
 function _extends() {
-  _extends = Object.assign ? Object.assign.bind() : function (target) {
+  _extends = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -32896,6 +32861,7 @@ function _extends() {
 
     return target;
   };
+
   return _extends.apply(this, arguments);
 }
 
@@ -32952,7 +32918,7 @@ exports.hooks = {
 /******/ 	var __webpack_module_cache__ = {};
 /******/ 	
 /******/ 	// The require function
-/******/ 	function __nested_webpack_require_23009__(moduleId) {
+/******/ 	function __nested_webpack_require_22988__(moduleId) {
 /******/ 		// Check if module is in cache
 /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 		if (cachedModule !== undefined) {
@@ -32966,7 +32932,7 @@ exports.hooks = {
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __nested_webpack_require_23009__);
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __nested_webpack_require_22988__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -32976,9 +32942,9 @@ exports.hooks = {
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	!function() {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__nested_webpack_require_23009__.d = function(exports, definition) {
+/******/ 		__nested_webpack_require_22988__.d = function(exports, definition) {
 /******/ 			for(var key in definition) {
-/******/ 				if(__nested_webpack_require_23009__.o(definition, key) && !__nested_webpack_require_23009__.o(exports, key)) {
+/******/ 				if(__nested_webpack_require_22988__.o(definition, key) && !__nested_webpack_require_22988__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
@@ -32987,13 +32953,13 @@ exports.hooks = {
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	!function() {
-/******/ 		__nested_webpack_require_23009__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 		__nested_webpack_require_22988__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	!function() {
 /******/ 		// define __esModule on exports
-/******/ 		__nested_webpack_require_23009__.r = function(exports) {
+/******/ 		__nested_webpack_require_22988__.r = function(exports) {
 /******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
@@ -33008,12 +32974,140 @@ var __webpack_exports__ = {};
 /*!********************************************!*\
   !*** ./client-src/modules/logger/index.js ***!
   \********************************************/
-__nested_webpack_require_23009__.r(__webpack_exports__);
-/* harmony export */ __nested_webpack_require_23009__.d(__webpack_exports__, {
+__nested_webpack_require_22988__.r(__webpack_exports__);
+/* harmony export */ __nested_webpack_require_22988__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* reexport default export from named module */ webpack_lib_logging_runtime_js__WEBPACK_IMPORTED_MODULE_0__; }
 /* harmony export */ });
-/* harmony import */ var webpack_lib_logging_runtime_js__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_23009__(/*! webpack/lib/logging/runtime.js */ "./node_modules/webpack/lib/logging/runtime.js");
+/* harmony import */ var webpack_lib_logging_runtime_js__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_22988__(/*! webpack/lib/logging/runtime.js */ "./node_modules/webpack/lib/logging/runtime.js");
 
+}();
+var __webpack_export_target__ = exports;
+for(var i in __webpack_exports__) __webpack_export_target__[i] = __webpack_exports__[i];
+if(__webpack_exports__.__esModule) Object.defineProperty(__webpack_export_target__, "__esModule", { value: true });
+/******/ })()
+;
+
+/***/ }),
+
+/***/ "./node_modules/webpack-dev-server/client/modules/strip-ansi/index.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/webpack-dev-server/client/modules/strip-ansi/index.js ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+/******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./node_modules/strip-ansi/index.js":
+/*!******************************************!*\
+  !*** ./node_modules/strip-ansi/index.js ***!
+  \******************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __nested_webpack_require_368__) {
+
+__nested_webpack_require_368__.r(__webpack_exports__);
+/* harmony export */ __nested_webpack_require_368__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ stripAnsi; }
+/* harmony export */ });
+/* harmony import */ var ansi_regex__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_368__(/*! ansi-regex */ "./node_modules/strip-ansi/node_modules/ansi-regex/index.js");
+
+function stripAnsi(string) {
+  if (typeof string !== 'string') {
+    throw new TypeError("Expected a `string`, got `".concat(typeof string, "`"));
+  }
+
+  return string.replace((0,ansi_regex__WEBPACK_IMPORTED_MODULE_0__["default"])(), '');
+}
+
+/***/ }),
+
+/***/ "./node_modules/strip-ansi/node_modules/ansi-regex/index.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/strip-ansi/node_modules/ansi-regex/index.js ***!
+  \******************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __nested_webpack_require_1387__) {
+
+__nested_webpack_require_1387__.r(__webpack_exports__);
+/* harmony export */ __nested_webpack_require_1387__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ ansiRegex; }
+/* harmony export */ });
+function ansiRegex() {
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      _ref$onlyFirst = _ref.onlyFirst,
+      onlyFirst = _ref$onlyFirst === void 0 ? false : _ref$onlyFirst;
+
+  var pattern = ["[\\u001B\\u009B][[\\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\\d\\/#&.:=?%@~_]+)*|[a-zA-Z\\d]+(?:;[-a-zA-Z\\d\\/#&.:=?%@~_]*)*)?\\u0007)", '(?:(?:\\d{1,4}(?:;\\d{0,4})*)?[\\dA-PR-TZcf-ntqry=><~]))'].join('|');
+  return new RegExp(pattern, onlyFirst ? undefined : 'g');
+}
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __nested_webpack_require_2352__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __nested_webpack_require_2352__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__nested_webpack_require_2352__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__nested_webpack_require_2352__.o(definition, key) && !__nested_webpack_require_2352__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__nested_webpack_require_2352__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__nested_webpack_require_2352__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+!function() {
+/*!************************************************!*\
+  !*** ./client-src/modules/strip-ansi/index.js ***!
+  \************************************************/
+__nested_webpack_require_2352__.r(__webpack_exports__);
+/* harmony import */ var strip_ansi__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_2352__(/*! strip-ansi */ "./node_modules/strip-ansi/index.js");
+
+/* harmony default export */ __webpack_exports__["default"] = (strip_ansi__WEBPACK_IMPORTED_MODULE_0__["default"]);
 }();
 var __webpack_export_target__ = exports;
 for(var i in __webpack_exports__) __webpack_export_target__[i] = __webpack_exports__[i];
@@ -33065,24 +33159,9 @@ var containerElement;
 /** @type {Array<(element: HTMLDivElement) => void>} */
 
 var onLoadQueue = [];
-/** @type {TrustedTypePolicy | undefined} */
-
-var overlayTrustedTypesPolicy;
 ansi_html_community__WEBPACK_IMPORTED_MODULE_0___default().setColors(colors);
-/**
- * @param {string | null} trustedTypesPolicyName
- */
 
-function createContainer(trustedTypesPolicyName) {
-  // Enable Trusted Types if they are available in the current browser.
-  if (window.trustedTypes) {
-    overlayTrustedTypesPolicy = window.trustedTypes.createPolicy(trustedTypesPolicyName || "webpack-dev-server#overlay", {
-      createHTML: function createHTML(value) {
-        return value;
-      }
-    });
-  }
-
+function createContainer() {
   iframeContainerElement = document.createElement("iframe");
   iframeContainerElement.id = "webpack-dev-server-client-overlay";
   iframeContainerElement.src = "about:blank";
@@ -33158,11 +33237,10 @@ function createContainer(trustedTypesPolicyName) {
 }
 /**
  * @param {(element: HTMLDivElement) => void} callback
- * @param {string | null} trustedTypesPolicyName
  */
 
 
-function ensureOverlayExists(callback, trustedTypesPolicyName) {
+function ensureOverlayExists(callback) {
   if (containerElement) {
     // Everything is ready, call the callback right away.
     callback(containerElement);
@@ -33175,7 +33253,7 @@ function ensureOverlayExists(callback, trustedTypesPolicyName) {
     return;
   }
 
-  createContainer(trustedTypesPolicyName);
+  createContainer();
 } // Successful compilation.
 
 
@@ -33220,11 +33298,10 @@ function formatProblem(type, item) {
 /**
  * @param {string} type
  * @param {Array<string  | { file?: string, moduleName?: string, loc?: string, message?: string }>} messages
- * @param {string | null} trustedTypesPolicyName
  */
 
 
-function show(type, messages, trustedTypesPolicyName) {
+function show(type, messages) {
   ensureOverlayExists(function () {
     messages.forEach(function (message) {
       var entryElement = document.createElement("div");
@@ -33239,7 +33316,7 @@ function show(type, messages, trustedTypesPolicyName) {
 
       var text = ansi_html_community__WEBPACK_IMPORTED_MODULE_0___default()((0,html_entities__WEBPACK_IMPORTED_MODULE_1__.encode)(body));
       var messageTextNode = document.createElement("div");
-      messageTextNode.innerHTML = overlayTrustedTypesPolicy ? overlayTrustedTypesPolicy.createHTML(text) : text;
+      messageTextNode.innerHTML = text;
       entryElement.appendChild(typeElement);
       entryElement.appendChild(document.createElement("br"));
       entryElement.appendChild(document.createElement("br"));
@@ -33250,7 +33327,7 @@ function show(type, messages, trustedTypesPolicyName) {
 
       containerElement.appendChild(entryElement);
     });
-  }, trustedTypesPolicyName);
+  });
 }
 
 
@@ -33266,7 +33343,6 @@ function show(type, messages, trustedTypesPolicyName) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "client": () => (/* binding */ client),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _clients_WebSocketClient_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./clients/WebSocketClient.js */ "./node_modules/webpack-dev-server/client/clients/WebSocketClient.js");
@@ -33283,10 +33359,7 @@ typeof __webpack_dev_server_client__ !== "undefined" ? typeof __webpack_dev_serv
 /* eslint-enable camelcase */
 
 var retries = 0;
-var maxRetries = 10; // Initialized client is exported so external consumers can utilize the same instance
-// It is mutable to enforce singleton
-// eslint-disable-next-line import/no-mutable-exports
-
+var maxRetries = 10;
 var client = null;
 /**
  * @param {string} url
@@ -33541,7 +33614,6 @@ function getCurrentScriptSource() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "log": () => (/* binding */ log),
-/* harmony export */   "logEnabledFeatures": () => (/* binding */ logEnabledFeatures),
 /* harmony export */   "setLogLevel": () => (/* binding */ setLogLevel)
 /* harmony export */ });
 /* harmony import */ var _modules_logger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/logger/index.js */ "./node_modules/webpack-dev-server/client/modules/logger/index.js");
@@ -33565,26 +33637,6 @@ function setLogLevel(level) {
 
 setLogLevel(defaultLevel);
 var log = _modules_logger_index_js__WEBPACK_IMPORTED_MODULE_0___default().getLogger(name);
-
-var logEnabledFeatures = function logEnabledFeatures(features) {
-  var enabledFeatures = Object.keys(features);
-
-  if (!features || enabledFeatures.length === 0) {
-    return;
-  }
-
-  var logString = "Server started:"; // Server started: Hot Module Replacement enabled, Live Reloading enabled, Overlay disabled.
-
-  for (var i = 0; i < enabledFeatures.length; i++) {
-    var key = enabledFeatures[i];
-    logString += " ".concat(key, " ").concat(features[key] ? "enabled" : "disabled", ",");
-  } // replace last comma with a period
-
-
-  logString = logString.slice(0, -1).concat(".");
-  log.info(logString);
-};
-
 
 
 /***/ }),
@@ -33612,7 +33664,7 @@ function parseURL(resourceQuery) {
   var options = {};
 
   if (typeof resourceQuery === "string" && resourceQuery !== "") {
-    var searchParams = resourceQuery.slice(1).split("&");
+    var searchParams = resourceQuery.substr(1).split("&");
 
     for (var i = 0; i < searchParams.length; i++) {
       var pair = searchParams[i].split("=");
@@ -33762,40 +33814,6 @@ function sendMsg(type, data) {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (sendMsg);
-
-/***/ }),
-
-/***/ "./node_modules/webpack-dev-server/client/utils/stripAnsi.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/webpack-dev-server/client/utils/stripAnsi.js ***!
-  \*******************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-var ansiRegex = new RegExp(["[\\u001B\\u009B][[\\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\\d\\/#&.:=?%@~_]+)*|[a-zA-Z\\d]+(?:;[-a-zA-Z\\d\\/#&.:=?%@~_]*)*)?\\u0007)", "(?:(?:\\d{1,4}(?:;\\d{0,4})*)?[\\dA-PR-TZcf-nq-uy=><~]))"].join("|"), "g");
-/**
- *
- * Strip [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code) from a string.
- * Adapted from code originally released by Sindre Sorhus
- * Licensed the MIT License
- *
- * @param {string} string
- * @return {string}
- */
-
-function stripAnsi(string) {
-  if (typeof string !== "string") {
-    throw new TypeError("Expected a `string`, got `".concat(typeof string, "`"));
-  }
-
-  return string.replace(ansiRegex, "");
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (stripAnsi);
 
 /***/ }),
 
@@ -34115,7 +34133,7 @@ module.exports = __webpack_require__.p + "103b5fa18196d5665a7e.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("42967d6cf091b5eac0e3")
+/******/ 		__webpack_require__.h = () => ("93807fe1eabc3970eb71")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/harmony module decorator */
@@ -35119,7 +35137,7 @@ module.exports = __webpack_require__.p + "103b5fa18196d5665a7e.svg";
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	__webpack_require__("./node_modules/webpack/hot/dev-server.js");
-/******/ 	__webpack_require__("./node_modules/webpack-dev-server/client/index.js?hot=true&hostname=localhost&port=3030");
+/******/ 	__webpack_require__("./node_modules/webpack-dev-server/client/index.js?hot=true&hostname=localhost&port=3000");
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/pages/Newtab/index.jsx");
 /******/ 	
 /******/ })()
