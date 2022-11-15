@@ -23,7 +23,7 @@ task("balance", "Prints the balance of accounts")
   });
 
 
-task("deploy", "Deploy the smart contracts", async(taskArgs, hre) => {
+task("deployNft", "Deploy the smart contracts", async(taskArgs, hre) => {
 
     const Completion = await hre.ethers.getContractFactory("Completion");
     const completion = await Completion.deploy("Completion Contract", "CPL");
@@ -51,10 +51,40 @@ task("deploy", "Deploy the smart contracts", async(taskArgs, hre) => {
     });
   });
 
+  task("deployToken", "Deploy the Token", async(taskArgs, hre) => {
+    
+    const DigitalWarriorToken = await hre.ethers.getContractFactory("DigitalWarriorToken");
+    const digitalWarriorToken = await DigitalWarriorToken.deploy();
+  
+    await digitalWarriorToken.deployed()
+      .then((result) => {
+        console.log("Complete Deploy" + JSON.stringify(result));
+      })
+      .catch((error) => {
+        console.log("Fail to Deploy" + error);
+      });
+  });
+
 /** @type import('hardhat/config').HardhatUserConfig */
 //스마트컨트랙트에서 선언한 컴파일러 버전과 hardhat.config.js의 solidity 버전이 동일해야함. 
 module.exports = {
-  solidity: "0.8.0",
+  solidity: {
+    compilers: [
+      {
+       version : "0.8.0",
+      },
+      {
+       version : "0.8.1",
+       settings: {},
+      }
+    ],
+    overrides: {
+      "@openzeppelin/contracts/utils/Address.sol":{
+        version: "0.8.1",
+        settings: {},
+      }
+    }
+  },
   networks: {
     mumbai: {
       url: process.env.TESTNET_RPC,
