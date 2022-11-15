@@ -1,0 +1,60 @@
+.Select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 100%;
+}
+
+.select-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #3d444d;
+    margin: 60px 0 30px 0;
+}
+
+.select-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 150px;
+    border-radius: 12px;
+    background-color: rgba(111,188,240,.1);
+    padding: 25px 20px;
+}
+
+.select-box-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #3d444d;
+    margin-bottom: 10px
+}
+
+.select-box-sub-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: gray;
+    margin-bottom: 10px
+}
+
+.select-btn {
+    margin: auto 0 0 0;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #0284ad;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 90%;
+    border: none;
+    color: white;
+    height: 44px;
+    cursor: pointer;
+}
+
+.select-btn:hover {
+    background-color: #165163;
+}

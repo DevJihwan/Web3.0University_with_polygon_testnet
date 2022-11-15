@@ -1,0 +1,48 @@
+.HistoryItem {
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.history-digest {
+    margin-bottom: auto;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.HistoryItem:hover {
+    background-color: #eeeeee;
+}
+
+.history-digest {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.history-recipients {
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.history-recipients {
+    text-align: left;
+}
+
+.history-inner-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.history-gas {
+
+}

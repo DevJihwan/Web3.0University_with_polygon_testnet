@@ -1,0 +1,73 @@
+.ImportWallet {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: rgb(210, 231, 244);
+    padding: 0 30px 0 30px;
+}
+
+.import-wallet-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #3d444d;
+    margin: 60px 0;
+}
+
+.import-wallet-password-input {
+    border: 1px solid #bbc0c5;
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.import-wallet-password-input:focus {
+    outline: none;
+    border: 1px solid #037dd6;
+}
+
+.import-wallet-syntax-input {
+    border: 1px solid #bbc0c5;
+    width: 100%;
+    height: 100px;
+    border-radius: 6px;
+    padding: 10px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.import-wallet-syntax-input:focus {
+    outline: none;
+    border: 1px solid #037dd6;
+}
+
+.import-btn {
+    margin: auto 0 20px 0;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #0284ad;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 90%;
+    border: none;
+    color: white;
+    height: 44px;
+    cursor: pointer;
+}
+
+.import-btn:hover {
+    background-color: #165163;
+}
+
+.import-wallet-error-message {
+    font-size: 12px;
+    color: #d73a49;
+    visibility: hidden;
+}
+
+.visibility-visible {
+    visibility: visible;
+}

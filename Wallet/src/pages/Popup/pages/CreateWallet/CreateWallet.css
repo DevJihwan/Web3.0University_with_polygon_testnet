@@ -1,0 +1,106 @@
+.CreateWallet {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: rgb(210, 231, 244);
+    padding: 0 30px 0 30px;
+}
+
+.create-wallet-wrap {
+    padding: 0 30px 0 30px;
+    height: 100%;
+}
+
+.create-wallet-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #3d444d;
+    margin: 60px 0;
+}
+
+.create-wallet-input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.create-wallet-password-title {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.password-input {
+    border: 1px solid #bbc0c5;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 0 10px;
+}
+
+.password-input:focus {
+    outline: none;
+    border: 1px solid #037dd6;
+}
+
+.error-message {
+    font-size: 12px;
+    color: #d73a49;
+    visibility: hidden;
+}
+
+.agree-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.agree-check-box {
+    align-self: flex-start;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+    cursor: pointer;
+}
+
+.agree-box-main-title {
+    color: #037dd6;
+    cursor: pointer;
+}
+
+.agree-box-title {
+    font-size: 14px;
+}
+
+.create-btn {
+    width: 100%;
+    height: 40px;
+    border-radius: 12px;
+    color: white;
+    background-color: gray;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 90%;
+    pointer-events: none;
+    margin: auto 0 20px 0;
+}
+
+.create-btn:hover {
+    background-color: #165163;
+}
+
+.check-all {
+    background-color: #0284ad;
+    pointer-events: auto;
+}
+
+.visibility-visible {
+    visibility: visible;
+}

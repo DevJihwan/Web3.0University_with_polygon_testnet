@@ -1,0 +1,133 @@
+.Send {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #d2e7f4;
+    padding: 60px 30px 70px 30px;
+    box-sizing: border-box;
+}
+
+.Send-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #3d444d;
+    margin: 20px 0;
+}
+
+.Send-Address-input {
+    border: 1px solid #bbc0c5;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+.Send-Address-input:focus {
+    outline: none;
+    border: 1px solid #037dd6;
+}
+
+.Send-Address-input-subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    color: #3d444d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Send-Amuount-input {
+    border: 1px solid #bbc0c5;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.Send-Amuount-input:focus {
+    outline: none;
+    border: 1px solid #037dd6;
+}
+
+.balance-check{
+    font-size: 16px;
+    font-weight: 700;
+    color: #3d444d;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.balance{
+    text-align: center;
+}
+
+.sent-message{
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.result-box {
+    font-size: 16px;
+    font-weight: 700;
+    color: #3d444d;
+    text-align: left;
+}
+
+.refresh-btn {
+    border-radius: 12px;
+    background-color: #0284ad;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 90%;
+    width: 65px;
+    height: 25px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.refresh-btn:hover {
+    background-color: #165163;
+}
+
+.submit-button-false{
+    margin: auto 0 20px 0;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #0284ad;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 90%;
+    border: none;
+    color: white;
+    height: 40px;
+    cursor: pointer;
+}
+
+.submit-button-false:hover {
+    background-color: #165163;
+}
+
+.submit-button-true{
+    margin: auto 0 20px 0;
+    align-items: center;
+    border-radius: 12px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 90%;
+    border: none;
+    color: white;
+    pointer-events: none;
+    height: 40px;
+}

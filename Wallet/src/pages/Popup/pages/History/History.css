@@ -1,0 +1,39 @@
+.History {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #d2e7f4;
+    padding: 60px 0 70px 0;
+    box-sizing: border-box;
+}
+
+.history-box {
+    height: 100%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.history-box::-webkit-scrollbar {
+    width: 5px;
+}
+
+.history-box::-webkit-scrollbar-thumb {
+    height: 30%;
+    background: #0284ad;
+    border-radius: 10px;
+}
+
+.history-box::-webkit-scrollbar-track {
+    background: #d2e7f4;
+}
+
+.history-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    height: 100%;
+    color: #3d444d;
+}
