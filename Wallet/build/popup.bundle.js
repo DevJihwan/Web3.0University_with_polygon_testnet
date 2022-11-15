@@ -43732,7 +43732,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".Footer {\n  position: absolute;\n  bottom: 0;\n  display: flex;\n  justify-content: center;\n  width: 100%;\n  height: 70px;\n  box-sizing: border-box;\n  padding: 0 30px 0 30px;\n  background: linear-gradient(90deg, #d2e7f4 30%, white 100%); }\n\n.footer-nav-box {\n  width: 80px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #0284ad;\n  font-size: 14px;\n  font-weight: 700;\n  cursor: pointer; }\n\n.footer-nav-box:hover {\n  background-color: #f2f8fa; }\n", "",{"version":3,"sources":["webpack://./src/pages/Popup/component/Footer/Footer.css"],"names":[],"mappings":"AAAA;EACI,kBAAkB;EAClB,SAAS;EACT,aAAa;EACb,uBAAuB;EACvB,WAAW;EACX,YAAY;EACZ,sBAAsB;EACtB,sBAAsB;EACtB,2DAA2D,EAAA;;AAG/D;EACI,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,cAAc;EACd,eAAe;EACf,gBAAgB;EAChB,eAAe,EAAA;;AAGnB;EACI,yBAAyB,EAAA","sourcesContent":[".Footer {\n    position: absolute;\n    bottom: 0;\n    display: flex;\n    justify-content: center;\n    width: 100%;\n    height: 70px;\n    box-sizing: border-box;\n    padding: 0 30px 0 30px;\n    background: linear-gradient(90deg, #d2e7f4 30%, white 100%);\n}\n\n.footer-nav-box {\n    width: 80px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    color: #0284ad;\n    font-size: 14px;\n    font-weight: 700;\n    cursor: pointer;\n}\n\n.footer-nav-box:hover {\n    background-color: #f2f8fa;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".Footer {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  display: flex;\n  justify-content: center;\n  width: 100%;\n  height: 70px;\n  box-sizing: border-box;\n  padding: 0 30px 0 30px;\n  background: linear-gradient(90deg, #d2e7f4 30%, white 100%); }\n\n.footer-nav-box {\n  width: 80px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #0284ad;\n  font-size: 14px;\n  font-weight: 700;\n  cursor: pointer; }\n\n.footer-nav-box:hover {\n  background-color: #f2f8fa; }\n", "",{"version":3,"sources":["webpack://./src/pages/Popup/component/Footer/Footer.css"],"names":[],"mappings":"AAAA;EACI,kBAAkB;EAClB,SAAS;EACT,OAAO;EACP,aAAa;EACb,uBAAuB;EACvB,WAAW;EACX,YAAY;EACZ,sBAAsB;EACtB,sBAAsB;EACtB,2DAA2D,EAAA;;AAG/D;EACI,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,cAAc;EACd,eAAe;EACf,gBAAgB;EAChB,eAAe,EAAA;;AAGnB;EACI,yBAAyB,EAAA","sourcesContent":[".Footer {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    display: flex;\n    justify-content: center;\n    width: 100%;\n    height: 70px;\n    box-sizing: border-box;\n    padding: 0 30px 0 30px;\n    background: linear-gradient(90deg, #d2e7f4 30%, white 100%);\n}\n\n.footer-nav-box {\n    width: 80px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    color: #0284ad;\n    font-size: 14px;\n    font-weight: 700;\n    cursor: pointer;\n}\n\n.footer-nav-box:hover {\n    background-color: #f2f8fa;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -43759,7 +43759,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".Header {\n  position: absolute;\n  top: 0;\n  display: flex;\n  justify-content: space-between;\n  width: 100%;\n  height: 60px;\n  box-sizing: border-box;\n  background: linear-gradient(90deg, white 30%, #d2e7f4 100%);\n  padding: 0 30px 0 30px; }\n\n.header-title {\n  font-size: 24px;\n  font-weight: 600;\n  align-self: center;\n  cursor: pointer;\n  color: #0284ad; }\n\n.header-nav-box {\n  display: flex;\n  width: 60px;\n  align-items: center;\n  justify-content: center;\n  color: #0284ad;\n  font-weight: 700;\n  cursor: pointer; }\n\n.header-nav-box:hover {\n  background-color: #f2f8fa; }\n", "",{"version":3,"sources":["webpack://./src/pages/Popup/component/Header/Header.css"],"names":[],"mappings":"AAAA;EACI,kBAAkB;EAClB,MAAM;EACN,aAAa;EACb,8BAA8B;EAC9B,WAAW;EACX,YAAY;EACZ,sBAAsB;EACtB,2DAA4D;EAC5D,sBAAsB,EAAA;;AAG1B;EACI,eAAe;EACf,gBAAgB;EAChB,kBAAkB;EAClB,eAAe;EACf,cAAc,EAAA;;AAGlB;EACI,aAAa;EACb,WAAW;EACX,mBAAmB;EACnB,uBAAuB;EACvB,cAAc;EACd,gBAAgB;EAChB,eAAe,EAAA;;AAGnB;EACI,yBAAyB,EAAA","sourcesContent":[".Header {\n    position: absolute;\n    top: 0;\n    display: flex;\n    justify-content: space-between;\n    width: 100%;\n    height: 60px;\n    box-sizing: border-box;\n    background: linear-gradient(90deg,  white 30%, #d2e7f4 100%);\n    padding: 0 30px 0 30px;\n}\n\n.header-title {\n    font-size: 24px;\n    font-weight: 600;\n    align-self: center;\n    cursor: pointer;\n    color: #0284ad;\n}\n\n.header-nav-box {\n    display: flex;\n    width: 60px;\n    align-items: center;\n    justify-content: center;\n    color: #0284ad;\n    font-weight: 700;\n    cursor: pointer;\n}\n\n.header-nav-box:hover {\n    background-color: #f2f8fa;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".Header {\n  position: absolute;\n  top: 0;\n  left: 0;\n  display: flex;\n  justify-content: space-between;\n  width: 100%;\n  height: 60px;\n  box-sizing: border-box;\n  background: linear-gradient(90deg, white 30%, #d2e7f4 100%);\n  padding: 0 30px 0 30px; }\n\n.header-title {\n  font-size: 24px;\n  font-weight: 600;\n  align-self: center;\n  cursor: pointer;\n  color: #0284ad; }\n\n.header-nav-box {\n  display: flex;\n  width: 60px;\n  align-items: center;\n  justify-content: center;\n  color: #0284ad;\n  font-weight: 700;\n  cursor: pointer; }\n\n.header-nav-box:hover {\n  background-color: #f2f8fa; }\n", "",{"version":3,"sources":["webpack://./src/pages/Popup/component/Header/Header.css"],"names":[],"mappings":"AAAA;EACI,kBAAkB;EAClB,MAAM;EACN,OAAO;EACP,aAAa;EACb,8BAA8B;EAC9B,WAAW;EACX,YAAY;EACZ,sBAAsB;EACtB,2DAA4D;EAC5D,sBAAsB,EAAA;;AAG1B;EACI,eAAe;EACf,gBAAgB;EAChB,kBAAkB;EAClB,eAAe;EACf,cAAc,EAAA;;AAGlB;EACI,aAAa;EACb,WAAW;EACX,mBAAmB;EACnB,uBAAuB;EACvB,cAAc;EACd,gBAAgB;EAChB,eAAe,EAAA;;AAGnB;EACI,yBAAyB,EAAA","sourcesContent":[".Header {\n    position: absolute;\n    top: 0;\n    left: 0;\n    display: flex;\n    justify-content: space-between;\n    width: 100%;\n    height: 60px;\n    box-sizing: border-box;\n    background: linear-gradient(90deg,  white 30%, #d2e7f4 100%);\n    padding: 0 30px 0 30px;\n}\n\n.header-title {\n    font-size: 24px;\n    font-weight: 600;\n    align-self: center;\n    cursor: pointer;\n    color: #0284ad;\n}\n\n.header-nav-box {\n    display: flex;\n    width: 60px;\n    align-items: center;\n    justify-content: center;\n    color: #0284ad;\n    font-weight: 700;\n    cursor: pointer;\n}\n\n.header-nav-box:hover {\n    background-color: #f2f8fa;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -44036,10 +44036,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, ".Select {\n  display: flex;\n  flex-di
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/pages/Popup/pages/Transaction/SendToken.css":
-/*!******************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/pages/Popup/pages/Transaction/SendToken.css ***!
-  \******************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/pages/Popup/pages/SendToken/SendToken.css":
+/*!****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/pages/Popup/pages/SendToken/SendToken.css ***!
+  \****************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -44056,7 +44056,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".Send {\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  background: #d2e7f4;\n  padding: 0 30px 0 30px; }\n\n.Send-title {\n  font-size: 28px;\n  font-weight: 700;\n  color: #3d444d;\n  margin: 20px 0; }\n\n.Send-Address-input-box {\n  display: flex;\n  flex-direction: column;\n  margin: 15px 0; }\n\n.Send-Address-input {\n  border: 1px solid #bbc0c5;\n  width: 100%;\n  height: 50px;\n  box-sizing: border-box;\n  border-radius: 6px;\n  padding: 0 15px; }\n\n.Send-Address-input-subtitle {\n  font-size: 20px;\n  font-weight: 700;\n  color: #3d444d;\n  margin-bottom: 5px;\n  text-align: center; }\n\n.Send-Amuount-input-box {\n  display: flex;\n  flex-direction: column;\n  margin: 15px 0; }\n\n.Send-Amuount-input {\n  border: 1px solid #bbc0c5;\n  width: 100%;\n  height: 50px;\n  box-sizing: border-box;\n  border-radius: 6px;\n  padding: 0 15px; }\n\n.Send-Amuount-input-subtitle {\n  font-size: 20px;\n  font-weight: 700;\n  color: #3d444d;\n  margin-bottom: 5px;\n  text-align: left; }\n\n.balance-check {\n  font-size: 20px;\n  font-weight: 700;\n  color: #3d444d;\n  margin-bottom: 5px;\n  text-align: left; }\n\n.balance {\n  border: 1px solid #bbc0c5;\n  box-sizing: border-box;\n  border-radius: 6px;\n  font-size: 10px; }\n\n.submit-button-false {\n  margin: 40px 0;\n  align-items: center;\n  border-radius: 12px;\n  background-color: #0284ad;\n  display: flex;\n  justify-content: center;\n  font-weight: 600;\n  font-size: 17px;\n  line-height: 150%;\n  border: none;\n  color: white; }\n\n.submit-button-true {\n  margin: 40px 0;\n  align-items: center;\n  border-radius: 12px;\n  background-color: #b4b4b4;\n  display: flex;\n  justify-content: center;\n  font-weight: 600;\n  font-size: 17px;\n  line-height: 150%;\n  border: none;\n  color: white; }\n\n.sent-message {\n  font-size: 13px;\n  font-weight: 700;\n  color: #5050FF; }\n", "",{"version":3,"sources":["webpack://./src/pages/Popup/pages/Transaction/SendToken.css"],"names":[],"mappings":"AAAA;EACI,aAAa;EACb,sBAAsB;EACtB,YAAY;EACZ,mBAA8B;EAC9B,sBAAsB,EAAA;;AAG1B;EACI,eAAe;EACf,gBAAgB;EAChB,cAAc;EACd,cAAc,EAAA;;AAGlB;EACI,aAAa;EACb,sBAAsB;EACtB,cAAc,EAAA;;AAGlB;EACI,yBAAyB;EACzB,WAAW;EACX,YAAY;EACZ,sBAAsB;EACtB,kBAAkB;EAClB,eAAe,EAAA;;AAGnB;EACI,eAAe;EACf,gBAAgB;EAChB,cAAc;EACd,kBAAkB;EAClB,kBAAkB,EAAA;;AAGtB;EACI,aAAa;EACb,sBAAsB;EACtB,cAAc,EAAA;;AAGlB;EACI,yBAAyB;EACzB,WAAW;EACX,YAAY;EACZ,sBAAsB;EACtB,kBAAkB;EAClB,eAAe,EAAA;;AAGnB;EACI,eAAe;EACf,gBAAgB;EAChB,cAAc;EACd,kBAAkB;EAClB,gBAAgB,EAAA;;AAGpB;EACI,eAAe;EACf,gBAAgB;EAChB,cAAc;EACd,kBAAkB;EAClB,gBAAgB,EAAA;;AAGpB;EACI,yBAAyB;EACzB,sBAAsB;EACtB,kBAAkB;EAClB,eAAe,EAAA;;AAGnB;EACI,cAAc;EACd,mBAAmB;EACnB,mBAAmB;EACnB,yBAAyB;EACzB,aAAa;EACb,uBAAuB;EACvB,gBAAgB;EAChB,eAAe;EACf,iBAAiB;EACjB,YAAY;EACZ,YAAY,EAAA;;AAGhB;EACI,cAAc;EACd,mBAAmB;EACnB,mBAAmB;EACnB,yBAAyB;EACzB,aAAa;EACb,uBAAuB;EACvB,gBAAgB;EAChB,eAAe;EACf,iBAAiB;EACjB,YAAY;EACZ,YAAY,EAAA;;AAGhB;EACI,eAAe;EACf,gBAAgB;EAChB,cAAc,EAAA","sourcesContent":[".Send {\n    display: flex;\n    flex-direction: column;\n    height: 100%;\n    background: rgb(210, 231, 244);\n    padding: 0 30px 0 30px;\n}\n\n.Send-title {\n    font-size: 28px;\n    font-weight: 700;\n    color: #3d444d;\n    margin: 20px 0;\n}\n\n.Send-Address-input-box {\n    display: flex;\n    flex-direction: column;\n    margin: 15px 0;\n}\n\n.Send-Address-input {\n    border: 1px solid #bbc0c5;\n    width: 100%;\n    height: 50px;\n    box-sizing: border-box;\n    border-radius: 6px;\n    padding: 0 15px;\n}\n\n.Send-Address-input-subtitle{\n    font-size: 20px;\n    font-weight: 700;\n    color: #3d444d;\n    margin-bottom: 5px;\n    text-align: center;\n}\n\n.Send-Amuount-input-box {\n    display: flex;\n    flex-direction: column;\n    margin: 15px 0;\n}\n\n.Send-Amuount-input {\n    border: 1px solid #bbc0c5;\n    width: 100%;\n    height: 50px;\n    box-sizing: border-box;\n    border-radius: 6px;\n    padding: 0 15px;\n}\n\n.Send-Amuount-input-subtitle{\n    font-size: 20px;\n    font-weight: 700;\n    color: #3d444d;\n    margin-bottom: 5px;\n    text-align: left;\n}\n\n.balance-check{\n    font-size: 20px;\n    font-weight: 700;\n    color: #3d444d;\n    margin-bottom: 5px;\n    text-align: left;\n}\n\n.balance{\n    border: 1px solid #bbc0c5;\n    box-sizing: border-box;\n    border-radius: 6px;\n    font-size: 10px;\n}\n\n.submit-button-false{\n    margin: 40px 0;\n    align-items: center;\n    border-radius: 12px;\n    background-color: #0284ad;\n    display: flex;\n    justify-content: center;\n    font-weight: 600;\n    font-size: 17px;\n    line-height: 150%;\n    border: none;\n    color: white;\n}\n\n.submit-button-true{\n    margin: 40px 0;\n    align-items: center;\n    border-radius: 12px;\n    background-color: #b4b4b4;\n    display: flex;\n    justify-content: center;\n    font-weight: 600;\n    font-size: 17px;\n    line-height: 150%;\n    border: none;\n    color: white;\n}\n\n.sent-message{\n    font-size: 13px;\n    font-weight: 700;\n    color: #5050FF;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".Send {\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  background: #d2e7f4;\n  padding: 60px 30px 70px 30px;\n  box-sizing: border-box; }\n\n.Send-title {\n  font-size: 28px;\n  font-weight: 700;\n  color: #3d444d;\n  margin: 20px 0; }\n\n.Send-Address-input {\n  border: 1px solid #bbc0c5;\n  width: 100%;\n  height: 50px;\n  box-sizing: border-box;\n  border-radius: 6px;\n  padding: 0 15px;\n  margin-bottom: 10px; }\n\n.Send-Address-input:focus {\n  outline: none;\n  border: 1px solid #037dd6; }\n\n.Send-Address-input-subtitle {\n  font-size: 14px;\n  font-weight: 700;\n  color: #3d444d;\n  margin-bottom: 20px;\n  text-align: center; }\n\n.Send-Amuount-input {\n  border: 1px solid #bbc0c5;\n  width: 100%;\n  height: 50px;\n  box-sizing: border-box;\n  border-radius: 6px;\n  padding: 0 15px;\n  margin-bottom: 20px; }\n\n.Send-Amuount-input:focus {\n  outline: none;\n  border: 1px solid #037dd6; }\n\n.balance-check {\n  font-size: 16px;\n  font-weight: 700;\n  color: #3d444d;\n  margin-bottom: 20px;\n  text-align: left; }\n\n.balance {\n  text-align: center; }\n\n.sent-message {\n  text-align: center;\n  text-overflow: ellipsis;\n  overflow: hidden;\n  white-space: nowrap; }\n\n.result-box {\n  font-size: 16px;\n  font-weight: 700;\n  color: #3d444d;\n  text-align: left; }\n\n.refresh-btn {\n  border-radius: 12px;\n  background-color: #0284ad;\n  justify-content: center;\n  font-weight: 600;\n  font-size: 12px;\n  line-height: 90%;\n  width: 65px;\n  height: 25px;\n  border: none;\n  color: white;\n  cursor: pointer; }\n\n.refresh-btn:hover {\n  background-color: #165163; }\n\n.submit-button-false {\n  margin: auto 0 20px 0;\n  align-items: center;\n  border-radius: 12px;\n  background-color: #0284ad;\n  display: flex;\n  justify-content: center;\n  font-weight: 600;\n  font-size: 14px;\n  line-height: 90%;\n  border: none;\n  color: white;\n  height: 40px;\n  cursor: pointer; }\n\n.submit-button-false:hover {\n  background-color: #165163; }\n\n.submit-button-true {\n  margin: auto 0 20px 0;\n  align-items: center;\n  border-radius: 12px;\n  background-color: gray;\n  display: flex;\n  justify-content: center;\n  font-weight: 600;\n  font-size: 14px;\n  line-height: 90%;\n  border: none;\n  color: white;\n  pointer-events: none;\n  height: 40px; }\n", "",{"version":3,"sources":["webpack://./src/pages/Popup/pages/SendToken/SendToken.css"],"names":[],"mappings":"AAAA;EACI,aAAa;EACb,sBAAsB;EACtB,YAAY;EACZ,mBAAmB;EACnB,4BAA4B;EAC5B,sBAAsB,EAAA;;AAG1B;EACI,eAAe;EACf,gBAAgB;EAChB,cAAc;EACd,cAAc,EAAA;;AAGlB;EACI,yBAAyB;EACzB,WAAW;EACX,YAAY;EACZ,sBAAsB;EACtB,kBAAkB;EAClB,eAAe;EACf,mBAAmB,EAAA;;AAGvB;EACI,aAAa;EACb,yBAAyB,EAAA;;AAG7B;EACI,eAAe;EACf,gBAAgB;EAChB,cAAc;EACd,mBAAmB;EACnB,kBAAkB,EAAA;;AAGtB;EACI,yBAAyB;EACzB,WAAW;EACX,YAAY;EACZ,sBAAsB;EACtB,kBAAkB;EAClB,eAAe;EACf,mBAAmB,EAAA;;AAGvB;EACI,aAAa;EACb,yBAAyB,EAAA;;AAG7B;EACI,eAAe;EACf,gBAAgB;EAChB,cAAc;EACd,mBAAmB;EACnB,gBAAgB,EAAA;;AAGpB;EACI,kBAAkB,EAAA;;AAGtB;EACI,kBAAkB;EAClB,uBAAuB;EACvB,gBAAgB;EAChB,mBAAmB,EAAA;;AAGvB;EACI,eAAe;EACf,gBAAgB;EAChB,cAAc;EACd,gBAAgB,EAAA;;AAGpB;EACI,mBAAmB;EACnB,yBAAyB;EACzB,uBAAuB;EACvB,gBAAgB;EAChB,eAAe;EACf,gBAAgB;EAChB,WAAW;EACX,YAAY;EACZ,YAAY;EACZ,YAAY;EACZ,eAAe,EAAA;;AAGnB;EACI,yBAAyB,EAAA;;AAG7B;EACI,qBAAqB;EACrB,mBAAmB;EACnB,mBAAmB;EACnB,yBAAyB;EACzB,aAAa;EACb,uBAAuB;EACvB,gBAAgB;EAChB,eAAe;EACf,gBAAgB;EAChB,YAAY;EACZ,YAAY;EACZ,YAAY;EACZ,eAAe,EAAA;;AAGnB;EACI,yBAAyB,EAAA;;AAG7B;EACI,qBAAqB;EACrB,mBAAmB;EACnB,mBAAmB;EACnB,sBAAsB;EACtB,aAAa;EACb,uBAAuB;EACvB,gBAAgB;EAChB,eAAe;EACf,gBAAgB;EAChB,YAAY;EACZ,YAAY;EACZ,oBAAoB;EACpB,YAAY,EAAA","sourcesContent":[".Send {\n    display: flex;\n    flex-direction: column;\n    height: 100%;\n    background: #d2e7f4;\n    padding: 60px 30px 70px 30px;\n    box-sizing: border-box;\n}\n\n.Send-title {\n    font-size: 28px;\n    font-weight: 700;\n    color: #3d444d;\n    margin: 20px 0;\n}\n\n.Send-Address-input {\n    border: 1px solid #bbc0c5;\n    width: 100%;\n    height: 50px;\n    box-sizing: border-box;\n    border-radius: 6px;\n    padding: 0 15px;\n    margin-bottom: 10px;\n}\n\n.Send-Address-input:focus {\n    outline: none;\n    border: 1px solid #037dd6;\n}\n\n.Send-Address-input-subtitle {\n    font-size: 14px;\n    font-weight: 700;\n    color: #3d444d;\n    margin-bottom: 20px;\n    text-align: center;\n}\n\n.Send-Amuount-input {\n    border: 1px solid #bbc0c5;\n    width: 100%;\n    height: 50px;\n    box-sizing: border-box;\n    border-radius: 6px;\n    padding: 0 15px;\n    margin-bottom: 20px;\n}\n\n.Send-Amuount-input:focus {\n    outline: none;\n    border: 1px solid #037dd6;\n}\n\n.balance-check{\n    font-size: 16px;\n    font-weight: 700;\n    color: #3d444d;\n    margin-bottom: 20px;\n    text-align: left;\n}\n\n.balance{\n    text-align: center;\n}\n\n.sent-message{\n    text-align: center;\n    text-overflow: ellipsis;\n    overflow: hidden;\n    white-space: nowrap;\n}\n\n.result-box {\n    font-size: 16px;\n    font-weight: 700;\n    color: #3d444d;\n    text-align: left;\n}\n\n.refresh-btn {\n    border-radius: 12px;\n    background-color: #0284ad;\n    justify-content: center;\n    font-weight: 600;\n    font-size: 12px;\n    line-height: 90%;\n    width: 65px;\n    height: 25px;\n    border: none;\n    color: white;\n    cursor: pointer;\n}\n\n.refresh-btn:hover {\n    background-color: #165163;\n}\n\n.submit-button-false{\n    margin: auto 0 20px 0;\n    align-items: center;\n    border-radius: 12px;\n    background-color: #0284ad;\n    display: flex;\n    justify-content: center;\n    font-weight: 600;\n    font-size: 14px;\n    line-height: 90%;\n    border: none;\n    color: white;\n    height: 40px;\n    cursor: pointer;\n}\n\n.submit-button-false:hover {\n    background-color: #165163;\n}\n\n.submit-button-true{\n    margin: auto 0 20px 0;\n    align-items: center;\n    border-radius: 12px;\n    background-color: gray;\n    display: flex;\n    justify-content: center;\n    font-weight: 600;\n    font-size: 14px;\n    line-height: 90%;\n    border: none;\n    color: white;\n    pointer-events: none;\n    height: 40px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -82963,8 +82963,8 @@ const _default = Popup;
     return;
   }
 
-  reactHotLoader.register(Popup, "Popup", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/Popup.jsx");
-  reactHotLoader.register(_default, "default", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/Popup.jsx");
+  reactHotLoader.register(Popup, "Popup", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/Popup.jsx");
+  reactHotLoader.register(_default, "default", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/Popup.jsx");
 })();
 
 ;
@@ -83041,8 +83041,8 @@ const _default = Footer;
     return;
   }
 
-  reactHotLoader.register(Footer, "Footer", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/component/Footer/Footer.jsx");
-  reactHotLoader.register(_default, "default", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/component/Footer/Footer.jsx");
+  reactHotLoader.register(Footer, "Footer", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/component/Footer/Footer.jsx");
+  reactHotLoader.register(_default, "default", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/component/Footer/Footer.jsx");
 })();
 
 ;
@@ -83117,8 +83117,8 @@ const _default = Header;
     return;
   }
 
-  reactHotLoader.register(Header, "Header", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/component/Header/Header.jsx");
-  reactHotLoader.register(_default, "default", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/component/Header/Header.jsx");
+  reactHotLoader.register(Header, "Header", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/component/Header/Header.jsx");
+  reactHotLoader.register(_default, "default", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/component/Header/Header.jsx");
 })();
 
 ;
@@ -83167,7 +83167,7 @@ const HistoryItem = ({
       alert("COPY TO BOARD");
 
       if (!confirm("Go To Sui Explorer")) {} else {
-        window.open(`https://explorer.devnet.sui.io/transactions/${data.transaction_digest}`, '_blank');
+        window.open(`https://explorer.devnet.sui.io`, '_blank');
       }
     });
   };
@@ -83181,27 +83181,27 @@ const HistoryItem = ({
     className: "history-inner-box"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Method"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "history-type"
-  }, data.method_name)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, data.transaction_type)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "history-inner-box"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Type"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "history-type"
-  }, data._flag)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, data.transaction_flag)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "history-inner-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Recipients"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Recipient"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "history-recipients"
-  }, data._recipients)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, data.recipient)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "history-inner-box"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Amount"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "history-amount"
-  }, data._amount)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, data.total_amount)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "history-inner-box"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "TotalGasFee"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "history-gas"
-  }, data._gas)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, data.total_gas_fee)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "history-inner-box"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Date"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "history-date"
-  }, moment__WEBPACK_IMPORTED_MODULE_2___default()(data.timestamp).format('YYYY-MM-DD'))));
+  }, moment__WEBPACK_IMPORTED_MODULE_2___default()(data.timestamp).format('YYYY-MM-DD hh:mm:ss'))));
 };
 
 const _default = HistoryItem;
@@ -83215,8 +83215,8 @@ const _default = HistoryItem;
     return;
   }
 
-  reactHotLoader.register(HistoryItem, "HistoryItem", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/component/HistoryItem/HistoryItem.jsx");
-  reactHotLoader.register(_default, "default", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/component/HistoryItem/HistoryItem.jsx");
+  reactHotLoader.register(HistoryItem, "HistoryItem", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/component/HistoryItem/HistoryItem.jsx");
+  reactHotLoader.register(_default, "default", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/component/HistoryItem/HistoryItem.jsx");
 })();
 
 ;
@@ -83328,7 +83328,7 @@ class Storage {
     return;
   }
 
-  reactHotLoader.register(Storage, "Storage", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/modules/Storage.js");
+  reactHotLoader.register(Storage, "Storage", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/modules/Storage.js");
 })();
 
 ;
@@ -83381,7 +83381,7 @@ class Validation {
     return;
   }
 
-  reactHotLoader.register(Validation, "Validation", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/modules/Validation.js");
+  reactHotLoader.register(Validation, "Validation", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/modules/Validation.js");
 })();
 
 ;
@@ -83461,13 +83461,13 @@ class SDK {
     console.log("test : " + keypairTeset);
     */
     //송금 signer 생성
-    const signer = new _mysten_sui_js__WEBPACK_IMPORTED_MODULE_2__.RawSigner(_keypair, provider);
-    console.log("convert to signer : " + signer); //공개키가 보유한 sui object 조회
+    const signer = new _mysten_sui_js__WEBPACK_IMPORTED_MODULE_2__.RawSigner(_keypair, provider); // console.log("convert to signer : " + signer);
+    //공개키가 보유한 sui object 조회
 
-    const map = await this.getOwnSuiList(_pubkey);
-    console.log("Own Sui List : " + map);
-    const _suiOnjectId = map.keys().next().value;
-    console.log("_suiOnjectId : " + _suiOnjectId);
+    const map = await this.getOwnSuiList(_pubkey); // console.log("Own Sui List : "+ map);
+
+    const _suiOnjectId = map.keys().next().value; // console.log("_suiOnjectId : "+ _suiOnjectId);
+
     const sendAmount = _amount * 10000000;
     const txn = {
       //코인 객체 id
@@ -83477,8 +83477,8 @@ class SDK {
       recipient: _toAddress,
       amount: sendAmount
     };
-    const result = await signer.transferSuiWithRequestType(txn);
-    console.log(`send sui complete : ${result}`);
+    const result = await signer.transferSuiWithRequestType(txn); // console.log(`send sui complete : ${result}`);
+
     return result;
   }
 
@@ -83508,15 +83508,15 @@ class SDK {
 
   static async getOwnSuiList(publicKey) {
     //테스트용 공개키 주소, 파라미터로 공개키 받을 것 
-    const _pubkey = publicKey;
-    console.log("STRAT SEARCHING History OF transaction"); //결과를 리턴하기 위한 map 정의 (key : 오브젝트id, value {타입, 잔액})
+    const _pubkey = publicKey; // console.log("STRAT SEARCHING History OF transaction");
+    //결과를 리턴하기 위한 map 정의 (key : 오브젝트id, value {타입, 잔액})
 
     const map = new Map(); //공개키가 가지고 있는 Sui Ojbject 확인
 
     const resultOfObjects = await provider.getObjectsOwnedByAddress(_pubkey); //가지고 있는 수이 코인 오브젝트 갯수 
 
-    const sizeOfobject = resultOfObjects.length;
-    console.log("sizeOfobject : " + sizeOfobject); //map에 오브젝트id와 type을 먼저 셋팅 
+    const sizeOfobject = resultOfObjects.length; // console.log("sizeOfobject : " + sizeOfobject);
+    //map에 오브젝트id와 type을 먼저 셋팅 
 
     for (var i = 0; i < sizeOfobject; i++) {
       map.set(resultOfObjects[i].objectId, [resultOfObjects[i].type]); //key : objectId, value : sui type
@@ -83535,9 +83535,9 @@ class SDK {
 
       const tempValue = map.get(resultOfObjects[i].objectId);
       map.set(resultOfObjects[i].objectId, [tempValue, objectBalance]);
-    }
+    } // console.log("return map : "+map);
 
-    console.log("return map : " + map);
+
     return map;
   }
   /*
@@ -83548,91 +83548,55 @@ class SDK {
   */
 
 
-  static async getHistoryTranssaction(pub) {
-    //함수 테스트용, 실제 연결할때는 파라미터를 공개키로 받고 아래 코드 대체 예정 
-    console.log("Staring get transaction history"); //const pubkey = '0x7d5784e654d4385fcf059ad6bd0819e2a383ba18';
-
-    const pubkey = pub; //공개키로 모든 digest 내역 가져오기
-
-    const resultOfdiget = await provider.getTransactionsForAddress(pubkey, false); // 이 데이터로 원하는 데이터 뽑아냄 {return : flag: sent or receiver, recipients : 받은 사람, amount : 받은 돋, gas: 수수료}
-    // flag는 recipents의 주소가 입력한 공개키와 일치하면 받은 돈, 불일치하면 보낸 돈으로 판단 
-
-    let _flag, _recipients, _amount, _gas;
-
-    const map = new Map();
+  static async getHistoryTranssaction(address) {
+    //주소로 모든 digest 내역 가져오기
+    const resultOfdiget = await provider.getTransactionsForAddress(address, false);
     let list = [];
 
     for (let i = 0; i < resultOfdiget.length; i++) {
       //digest로 transaction 디테일 불러오기
-      const history = await provider.getTransactionWithEffects(resultOfdiget[i]); // console.log(history);
-      //불러온 내역 중에서 transactions만 빼오기
+      const history = await provider.getTransactionWithEffects(resultOfdiget[i]); //불러온 내역 중에서 transactions만 빼오기
 
-      const selector = history.certificate.data.transactions; // console.log("selector : " + JSON.stringify(selector));
-      //PaySui가 여러개 토큰을 발행해주는 메소드로 판단되어 분기 처리 
+      const transactions = history.certificate.data.transactions; //PaySui가 여러개 토큰을 발행해주는 메소드로 판단되어 분기 처리 
 
-      const methodName = JSON.stringify(selector).split("\"")[1]; // console.log("methodName : "+ methodName);
-      //json data 대괄호를 없애기 위한 작업
+      const transactionType = Object.keys(transactions[0])[0];
+      const totalGasFee = history.effects.events[0].coinBalanceChange.amount;
+      let amounts;
 
-      const a = JSON.stringify(selector[0]); // console.log("a : " + a);
+      switch (transactionType) {
+        case 'PaySui':
+          amounts = transactions[0][Object.keys(transactions[0])[0]].amounts;
+          break;
 
-      _gas = history.effects.events[0].coinBalanceChange.amount; // console.log("_gas : "+_gas);
+        case 'TransferSui':
+          amounts = [transactions[0][Object.keys(transactions[0])[0]].amount];
+          break;
 
-      const data = JSON.parse(a);
+        default:
+          throw 'check transactionType and add case';
+      }
 
-      if (methodName == "PaySui") {
-        // console.log("data.Paysui.amounts : "+ data.PaySui.amounts);
-        //amount가 리스트로 내려오면 내려온 값 합산
-        if (1 < data.PaySui.amounts.length) {
-          const subtotal = data.PaySui.amounts.reduce((accumulator, current) => {
-            return accumulator + current;
-          }, 0); // console.log("subtotal : "+subtotal);
+      const totalAmount = amounts.reduce((acc, cur) => acc + cur, 0);
+      const sender = history.certificate.data.sender;
+      let flag = 'Receive';
 
-          _amount = subtotal;
-        } else {
-          _amount = data.PaySui.amounts;
-        } // console.log("data.Paysui.recipients : "+data.PaySui.recipients);
-        //recipients가 복수로 내려오는 경우 확인 (테스트 토큰 지급시 수령인 5개가 모두 동일 주소로 내려옴)
+      if (sender === address) {
+        flag = 'Send';
+      }
 
-
-        if (1 < data.PaySui.recipients.length) {
-          _recipients = data.PaySui.recipients[0];
-        } else {
-          _recipients = data.PaySui.recipients;
-        } //수령인과 공개키를 비교하여 플래그 결정 
-
-
-        if (pubkey == _recipients) {
-          _flag = "Received";
-        } else {
-          _flag = "Sent";
-        }
-      } else if (methodName == "Pay") {
-        // console.log("data.Pay.amounts : "+data.Pay.amounts);
-        _amount = data.Pay.amounts; // console.log("data.Pay.recipients : "+data.Pay.recipients);
-
-        _recipients = data.Pay.recipients; //수령인과 공개키를 비교하여 플래그 결정 
-
-        if (pubkey == _recipients) {
-          _flag = "Received";
-        } else {
-          _flag = "Sent";
-        }
-      } // console.log(`_flag : ${_flag}, _recipients : ${_recipients}, _amount : ${_amount}, _gas : ${_gas}`);
-      // map.set(i, [_flag, _recipients, _amount, _gas]);
-
-
+      const recipient = transactions[0][Object.keys(transactions[0])[0]].recipient || transactions[0][Object.keys(transactions[0])[0]].recipients[0];
       list.push({
         transaction_digest: resultOfdiget[i],
-        method_name: methodName,
-        _flag,
-        _recipients,
-        _amount,
-        _gas,
+        transaction_type: transactionType,
+        transaction_flag: flag,
+        recipient: recipient,
+        total_amount: totalAmount,
+        total_gas_fee: totalGasFee,
         timestamp: history.timestamp_ms
       });
     }
 
-    return list; // return map;
+    return list;
   }
   /*
   * 테스트 토큰 요청하기
@@ -83659,8 +83623,8 @@ class SDK {
     const SUI_ADDRESS_LENGTH = 20;
     const checkReg1 = /^(0x|0X)?[a-fA-F0-9]+$/.test(publicKey) && publicKey.length % 2 === 0;
     const checkReg2 = /^(0x|0X)/.test(publicKey) ? (publicKey.length - 2) / 2 : publicKey.length / 2;
-    const checkReg3 = SUI_ADDRESS_LENGTH;
-    console.log(`checkReg1 : ${checkReg1}, checkReg2 : ${checkReg2}, checkReg3 : ${checkReg3}`);
+    const checkReg3 = SUI_ADDRESS_LENGTH; // console.log(`checkReg1 : ${checkReg1}, checkReg2 : ${checkReg2}, checkReg3 : ${checkReg3}`);
+
     console.log(checkReg1 && checkReg2 === checkReg3);
     return checkReg1 && checkReg2 === checkReg3;
   }
@@ -83675,8 +83639,8 @@ class SDK {
     return;
   }
 
-  reactHotLoader.register(provider, "provider", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/modules/sdk.js");
-  reactHotLoader.register(SDK, "SDK", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/modules/sdk.js");
+  reactHotLoader.register(provider, "provider", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/modules/sdk.js");
+  reactHotLoader.register(SDK, "SDK", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/modules/sdk.js");
 })();
 
 ;
@@ -83776,8 +83740,8 @@ const _default = ConfirmRecoveryPhrase;
     return;
   }
 
-  reactHotLoader.register(ConfirmRecoveryPhrase, "ConfirmRecoveryPhrase", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/pages/ConfirmRecoveryPhrase/ConfirmRecoveryPhrase.jsx");
-  reactHotLoader.register(_default, "default", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/pages/ConfirmRecoveryPhrase/ConfirmRecoveryPhrase.jsx");
+  reactHotLoader.register(ConfirmRecoveryPhrase, "ConfirmRecoveryPhrase", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/pages/ConfirmRecoveryPhrase/ConfirmRecoveryPhrase.jsx");
+  reactHotLoader.register(_default, "default", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/pages/ConfirmRecoveryPhrase/ConfirmRecoveryPhrase.jsx");
 })();
 
 ;
@@ -83962,8 +83926,8 @@ const _default = CreateWallet;
     return;
   }
 
-  reactHotLoader.register(CreateWallet, "CreateWallet", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/pages/CreateWallet/CreateWallet.jsx");
-  reactHotLoader.register(_default, "default", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/pages/CreateWallet/CreateWallet.jsx");
+  reactHotLoader.register(CreateWallet, "CreateWallet", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/pages/CreateWallet/CreateWallet.jsx");
+  reactHotLoader.register(_default, "default", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/pages/CreateWallet/CreateWallet.jsx");
 })();
 
 ;
@@ -84019,7 +83983,7 @@ const History = () => {
   const setPageState = (0,recoil__WEBPACK_IMPORTED_MODULE_2__.useSetRecoilState)(_recoil_index__WEBPACK_IMPORTED_MODULE_3__.pageState);
   const pair = (0,recoil__WEBPACK_IMPORTED_MODULE_2__.useRecoilValue)(_recoil_index__WEBPACK_IMPORTED_MODULE_3__.pairState);
   const [historyList, setHistoryList] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]);
-  const [empty, setEmpty] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('loading');
+  const [empty, setEmpty] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('Fetching Data');
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     getHistory();
   }, []);
@@ -84032,7 +83996,7 @@ const History = () => {
       setEmpty('empty');
     }
 
-    setHistoryList(historyList);
+    setHistoryList(historyList.reverse());
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -84047,7 +84011,7 @@ const History = () => {
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_component_Footer_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], null));
 };
 
-__signature__(History, "useSetRecoilState{setPageState}\nuseRecoilValue{pair}\nuseState{[historyList, setHistoryList]([])}\nuseState{[empty, setEmpty]('loading')}\nuseEffect{}", () => [recoil__WEBPACK_IMPORTED_MODULE_2__.useSetRecoilState, recoil__WEBPACK_IMPORTED_MODULE_2__.useRecoilValue]);
+__signature__(History, "useSetRecoilState{setPageState}\nuseRecoilValue{pair}\nuseState{[historyList, setHistoryList]([])}\nuseState{[empty, setEmpty]('Fetching Data')}\nuseEffect{}", () => [recoil__WEBPACK_IMPORTED_MODULE_2__.useSetRecoilState, recoil__WEBPACK_IMPORTED_MODULE_2__.useRecoilValue]);
 
 const _default = History;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_default);
@@ -84060,8 +84024,8 @@ const _default = History;
     return;
   }
 
-  reactHotLoader.register(History, "History", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/pages/History/History.jsx");
-  reactHotLoader.register(_default, "default", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/pages/History/History.jsx");
+  reactHotLoader.register(History, "History", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/pages/History/History.jsx");
+  reactHotLoader.register(_default, "default", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/pages/History/History.jsx");
 })();
 
 ;
@@ -84150,8 +84114,8 @@ const _default = Home;
     return;
   }
 
-  reactHotLoader.register(Home, "Home", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/pages/Home/Home.jsx");
-  reactHotLoader.register(_default, "default", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/pages/Home/Home.jsx");
+  reactHotLoader.register(Home, "Home", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/pages/Home/Home.jsx");
+  reactHotLoader.register(_default, "default", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/pages/Home/Home.jsx");
 })();
 
 ;
@@ -84341,8 +84305,8 @@ const _default = ImportWallet;
     return;
   }
 
-  reactHotLoader.register(ImportWallet, "ImportWallet", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/pages/ImportWallet/ImportWallet.jsx");
-  reactHotLoader.register(_default, "default", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/pages/ImportWallet/ImportWallet.jsx");
+  reactHotLoader.register(ImportWallet, "ImportWallet", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/pages/ImportWallet/ImportWallet.jsx");
+  reactHotLoader.register(_default, "default", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/pages/ImportWallet/ImportWallet.jsx");
 })();
 
 ;
@@ -84451,8 +84415,8 @@ const _default = Login;
     return;
   }
 
-  reactHotLoader.register(Login, "Login", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/pages/Login/Login.jsx");
-  reactHotLoader.register(_default, "default", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/pages/Login/Login.jsx");
+  reactHotLoader.register(Login, "Login", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/pages/Login/Login.jsx");
+  reactHotLoader.register(_default, "default", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/pages/Login/Login.jsx");
 })();
 
 ;
@@ -84512,6 +84476,7 @@ const MyWallet = () => {
     setAddress(addressOfPub);
     getBalance(addressOfPub);
     const interval = setInterval(async () => {
+      setFaucetStatus('');
       setBalance(await _modules_sdk__WEBPACK_IMPORTED_MODULE_6__.SDK.getBalance(addressOfPub));
     }, 5000);
     return () => {
@@ -84562,8 +84527,8 @@ const _default = MyWallet;
     return;
   }
 
-  reactHotLoader.register(MyWallet, "MyWallet", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/pages/MyWallet/MyWallet.jsx");
-  reactHotLoader.register(_default, "default", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/pages/MyWallet/MyWallet.jsx");
+  reactHotLoader.register(MyWallet, "MyWallet", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/pages/MyWallet/MyWallet.jsx");
+  reactHotLoader.register(_default, "default", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/pages/MyWallet/MyWallet.jsx");
 })();
 
 ;
@@ -84652,8 +84617,8 @@ const _default = Select;
     return;
   }
 
-  reactHotLoader.register(Select, "Select", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/pages/Select/Select.jsx");
-  reactHotLoader.register(_default, "default", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/pages/Select/Select.jsx");
+  reactHotLoader.register(Select, "Select", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/pages/Select/Select.jsx");
+  reactHotLoader.register(_default, "default", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/pages/Select/Select.jsx");
 })();
 
 ;
@@ -84665,10 +84630,10 @@ const _default = Select;
 
 /***/ }),
 
-/***/ "./src/pages/Popup/pages/Transaction/SendToken.jsx":
-/*!*********************************************************!*\
-  !*** ./src/pages/Popup/pages/Transaction/SendToken.jsx ***!
-  \*********************************************************/
+/***/ "./src/pages/Popup/pages/SendToken/SendToken.jsx":
+/*!*******************************************************!*\
+  !*** ./src/pages/Popup/pages/SendToken/SendToken.jsx ***!
+  \*******************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -84677,10 +84642,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _SendToken_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SendToken.css */ "./src/pages/Popup/pages/Transaction/SendToken.css");
+/* harmony import */ var _SendToken_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SendToken.css */ "./src/pages/Popup/pages/SendToken/SendToken.css");
 /* harmony import */ var recoil__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! recoil */ "./node_modules/recoil/es/index.js");
 /* harmony import */ var _recoil_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../recoil/index */ "./src/pages/Popup/recoil/index.js");
-/* harmony import */ var _modules_sdk__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../modules/sdk */ "./src/pages/Popup/modules/sdk.js");
+/* harmony import */ var _component_Header_Header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../component/Header/Header */ "./src/pages/Popup/component/Header/Header.jsx");
+/* harmony import */ var _component_Footer_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../component/Footer/Footer */ "./src/pages/Popup/component/Footer/Footer.jsx");
+/* harmony import */ var _modules_sdk__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../modules/sdk */ "./src/pages/Popup/modules/sdk.js");
 /* module decorator */ module = __webpack_require__.hmd(module);
 (function () {
   var enterModule = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.enterModule : undefined;
@@ -84697,94 +84664,126 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 
 
 
+
+
 const SendToken = () => {
   const setPageState = (0,recoil__WEBPACK_IMPORTED_MODULE_2__.useSetRecoilState)(_recoil_index__WEBPACK_IMPORTED_MODULE_3__.pageState);
   const pair = (0,recoil__WEBPACK_IMPORTED_MODULE_2__.useRecoilValue)(_recoil_index__WEBPACK_IMPORTED_MODULE_3__.pairState);
-  const [amount, setAmount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)();
-  const [toAddress, setAddress] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)();
-  const [disabled, setDisabled] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)();
-  const [pubkey, setPubkey] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)();
-  const [balance, setBalance] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0);
-  const [message, setMessage] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)();
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(async () => {
-    setDisabled(true);
-    setPubkey(_modules_sdk__WEBPACK_IMPORTED_MODULE_4__.SDK.getAddress(pair.getPublicKey()));
-    setBalance(await _modules_sdk__WEBPACK_IMPORTED_MODULE_4__.SDK.getBalance(pubkey));
-    console.log("toAddress : " + toAddress);
-
-    if (typeof toAddress != "undefined" && toAddress != null) {
-      checkSuiAddressVerify(toAddress);
+  const [toAddress, setToAddress] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
+  const [amount, setAmount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
+  const [disabled, setDisabled] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
+  const [pubkey, setPubkey] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
+  const [balance, setBalance] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('pending');
+  const [message, setMessage] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    const addressOfPub = _modules_sdk__WEBPACK_IMPORTED_MODULE_6__.SDK.getAddress(pair.getPublicKey());
+    getBalance(addressOfPub);
+    setPubkey(addressOfPub);
+  }, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    if (checkSuiAddressVerify(toAddress) && checkAmount(amount)) {
+      setDisabled(false);
+    } else {
+      setDisabled(true);
     }
-  }, [toAddress]);
+  }, [toAddress, amount]);
+
+  const getBalance = async publickKey => {
+    setBalance('pending');
+    setBalance(await _modules_sdk__WEBPACK_IMPORTED_MODULE_6__.SDK.getBalance(publickKey));
+  };
   /*
   * 화면에서 상대방 공개키 + 보내는 sui 받아서 송금 실행 
   */
 
-  const send = () => {
-    console.log("start send sui coin: ");
-    console.log("=====================");
-    console.log("===== To : ==========" + toAddress);
-    console.log("===== Amount : ======" + amount);
-    console.log("====================="); //공개키 메인에서 페이지 전환 시 전달 받을 것, 
 
-    _modules_sdk__WEBPACK_IMPORTED_MODULE_4__.SDK.sendToken(pair, pubkey, toAddress, amount).then(result => {
-      console.log(`send result is ${result}`);
-      setMessage("송금이 완료되었습니다.");
-    }).catch(error => {});
+  const send = async () => {
+    try {
+      setMessage("..."); //공개키 메인에서 페이지 전환 시 전달 받을 것, 
+
+      const result = await _modules_sdk__WEBPACK_IMPORTED_MODULE_6__.SDK.sendToken(pair, pubkey, toAddress, amount);
+      setDisabled(true);
+      setToAddress('');
+      setAmount('');
+      setMessage(`digest : ${result.EffectsCert.certificate.transactionDigest}`);
+    } catch (e) {
+      console.log(e);
+      setMessage("Transaction failed to send");
+    }
   };
   /*
   * 상대방의 주소가 입력되면 계좌 검증을 통해, 검증 결과가 true인 경우 송금 버튼을 활성화
   */
 
 
-  const checkSuiAddressVerify = toAddress => {
-    console.log("start checkSuiAddressVerify");
-    console.log("toAddress : " + toAddress);
-    console.log("toAddress : " + typeof toAddress);
-    console.log("toAddress : " + toAddress.length); //입력받은 pubkey 검증
+  const checkSuiAddressVerify = _toAddress => {
+    //입력받은 pubkey 검증
+    if (_toAddress !== '' && _toAddress.length === 42) {
+      return true;
+    } else {
+      return false;
+    }
+  };
 
-    if (toAddress != null && toAddress.length === 42) {
-      console.log("계좌 검증 완료" + _modules_sdk__WEBPACK_IMPORTED_MODULE_4__.SDK.isSuiAddress(toAddress));
-      setDisabled(false);
+  const checkAmount = _amount => {
+    try {
+      if (_amount === '') {
+        throw 'empty';
+      }
+
+      if (isNaN(Number(_amount)) === true) {
+        throw 'NaN';
+      }
+
+      return true;
+    } catch (e) {
+      return false;
     }
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "Send"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_component_Header_Header__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "Send-title"
   }, "SendToken"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "Send-Address-input-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: "Send-Address-input-subtitle"
   }, "Enter or search the address of the recepient below to start sending coins."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
     className: "Send-Address-input",
-    onChange: e => setAddress(e.target.value),
+    value: toAddress,
+    onChange: e => setToAddress(e.target.value),
     name: "toaddress",
     placeholder: "Address"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "Send-Amuount-input-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    className: "Send-Amuount-input-subtitle"
-  }, "Amount"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
     className: "Send-Amuount-input",
+    value: amount,
     onChange: e => setAmount(e.target.value),
     name: "amount",
     placeholder: "Amount"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "balance-check"
-  }, "Available is ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    style: {
+      'display': 'flex',
+      'justifyContent': 'space-between',
+      'alignItems': 'center'
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Available"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    className: "refresh-btn",
+    onClick: () => getBalance(pubkey)
+  }, "refresh")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "balance"
-  }, balance === 0 ? '...' : '0.' + balance, "  Sui")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+  }, balance === 'pending' ? '...' : '0.' + balance, "  SUI")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "result-box"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Result"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "sent-message"
+  }, message)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     className: `submit-button-${disabled}`,
     onClick: send,
     type: "submit"
-  }, "Transfer Sui"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "sent-message"
-  }, message));
+  }, "Transfer Sui"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_component_Footer_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], null));
 };
 
-__signature__(SendToken, "useSetRecoilState{setPageState}\nuseRecoilValue{pair}\nuseState{[amount, setAmount]}\nuseState{[toAddress, setAddress]}\nuseState{[disabled, setDisabled]}\nuseState{[pubkey, setPubkey]}\nuseState{[balance, setBalance](0)}\nuseState{[message, setMessage]}\nuseEffect{}", () => [recoil__WEBPACK_IMPORTED_MODULE_2__.useSetRecoilState, recoil__WEBPACK_IMPORTED_MODULE_2__.useRecoilValue]);
+__signature__(SendToken, "useSetRecoilState{setPageState}\nuseRecoilValue{pair}\nuseState{[toAddress, setToAddress]('')}\nuseState{[amount, setAmount]('')}\nuseState{[disabled, setDisabled](true)}\nuseState{[pubkey, setPubkey]('')}\nuseState{[balance, setBalance]('pending')}\nuseState{[message, setMessage]('')}\nuseEffect{}\nuseEffect{}", () => [recoil__WEBPACK_IMPORTED_MODULE_2__.useSetRecoilState, recoil__WEBPACK_IMPORTED_MODULE_2__.useRecoilValue]);
 
 const _default = SendToken;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_default);
@@ -84797,8 +84796,8 @@ const _default = SendToken;
     return;
   }
 
-  reactHotLoader.register(SendToken, "SendToken", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/pages/Transaction/SendToken.jsx");
-  reactHotLoader.register(_default, "default", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/pages/Transaction/SendToken.jsx");
+  reactHotLoader.register(SendToken, "SendToken", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/pages/SendToken/SendToken.jsx");
+  reactHotLoader.register(_default, "default", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/pages/SendToken/SendToken.jsx");
 })();
 
 ;
@@ -84861,10 +84860,10 @@ const pairState = (0,recoil__WEBPACK_IMPORTED_MODULE_0__.atom)({
     return;
   }
 
-  reactHotLoader.register(pageState, "pageState", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/recoil/index.js");
-  reactHotLoader.register(encryptMnemonicState, "encryptMnemonicState", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/recoil/index.js");
-  reactHotLoader.register(mnemonicState, "mnemonicState", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/recoil/index.js");
-  reactHotLoader.register(pairState, "pairState", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/recoil/index.js");
+  reactHotLoader.register(pageState, "pageState", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/recoil/index.js");
+  reactHotLoader.register(encryptMnemonicState, "encryptMnemonicState", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/recoil/index.js");
+  reactHotLoader.register(mnemonicState, "mnemonicState", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/recoil/index.js");
+  reactHotLoader.register(pairState, "pairState", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/recoil/index.js");
 })();
 
 ;
@@ -84891,7 +84890,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var recoil__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! recoil */ "./node_modules/recoil/es/index.js");
 /* harmony import */ var _pages_CreateWallet_CreateWallet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../pages/CreateWallet/CreateWallet */ "./src/pages/Popup/pages/CreateWallet/CreateWallet.jsx");
 /* harmony import */ var _pages_Home_Home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../pages/Home/Home */ "./src/pages/Popup/pages/Home/Home.jsx");
-/* harmony import */ var _pages_Transaction_SendToken__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pages/Transaction/SendToken */ "./src/pages/Popup/pages/Transaction/SendToken.jsx");
+/* harmony import */ var _pages_SendToken_SendToken__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pages/SendToken/SendToken */ "./src/pages/Popup/pages/SendToken/SendToken.jsx");
 /* harmony import */ var _recoil__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../recoil */ "./src/pages/Popup/recoil/index.js");
 /* harmony import */ var _pages_Select_Select__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../pages/Select/Select */ "./src/pages/Popup/pages/Select/Select.jsx");
 /* harmony import */ var _pages_ConfirmRecoveryPhrase_ConfirmRecoveryPhrase__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../pages/ConfirmRecoveryPhrase/ConfirmRecoveryPhrase */ "./src/pages/Popup/pages/ConfirmRecoveryPhrase/ConfirmRecoveryPhrase.jsx");
@@ -84950,7 +84949,7 @@ const render = () => {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pages_History_History__WEBPACK_IMPORTED_MODULE_11__["default"], null);
 
     case 'SendToken':
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pages_Transaction_SendToken__WEBPACK_IMPORTED_MODULE_4__["default"], null);
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pages_SendToken_SendToken__WEBPACK_IMPORTED_MODULE_4__["default"], null);
 
     default:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "no page");
@@ -84968,7 +84967,7 @@ __signature__(render, "useRecoilValue{page}", () => [recoil__WEBPACK_IMPORTED_MO
     return;
   }
 
-  reactHotLoader.register(render, "render", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Popup/router/index.js");
+  reactHotLoader.register(render, "render", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Popup/router/index.js");
 })();
 
 ;
@@ -86449,10 +86448,10 @@ if (true) {
 
 /***/ }),
 
-/***/ "./src/pages/Popup/pages/Transaction/SendToken.css":
-/*!*********************************************************!*\
-  !*** ./src/pages/Popup/pages/Transaction/SendToken.css ***!
-  \*********************************************************/
+/***/ "./src/pages/Popup/pages/SendToken/SendToken.css":
+/*!*******************************************************!*\
+  !*** ./src/pages/Popup/pages/SendToken/SendToken.css ***!
+  \*******************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -86472,7 +86471,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_SendToken_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./SendToken.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/pages/Popup/pages/Transaction/SendToken.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_SendToken_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./SendToken.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/pages/Popup/pages/SendToken/SendToken.css");
 
       
       
@@ -86534,8 +86533,8 @@ if (true) {
     var oldLocals = isNamedExport ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_SendToken_css__WEBPACK_IMPORTED_MODULE_6__ : _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_SendToken_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals;
 
     module.hot.accept(
-      /*! !!../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./SendToken.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/pages/Popup/pages/Transaction/SendToken.css",
-      __WEBPACK_OUTDATED_DEPENDENCIES__ => { /* harmony import */ _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_SendToken_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./SendToken.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/pages/Popup/pages/Transaction/SendToken.css");
+      /*! !!../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./SendToken.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/pages/Popup/pages/SendToken/SendToken.css",
+      __WEBPACK_OUTDATED_DEPENDENCIES__ => { /* harmony import */ _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_SendToken_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./SendToken.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/pages/Popup/pages/SendToken/SendToken.css");
 (function () {
         if (!isEqualLocals(oldLocals, isNamedExport ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_SendToken_css__WEBPACK_IMPORTED_MODULE_6__ : _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_SendToken_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals, isNamedExport)) {
                 module.hot.invalidate();
@@ -89348,14 +89347,14 @@ var WebSocketClient = /*#__PURE__*/function () {
 
 /***/ }),
 
-/***/ "./node_modules/webpack-dev-server/client/index.js?hot=true&hostname=localhost&port=3000":
+/***/ "./node_modules/webpack-dev-server/client/index.js?hot=true&hostname=localhost&port=3030":
 /*!***********************************************************************************************!*\
-  !*** ./node_modules/webpack-dev-server/client/index.js?hot=true&hostname=localhost&port=3000 ***!
+  !*** ./node_modules/webpack-dev-server/client/index.js?hot=true&hostname=localhost&port=3030 ***!
   \***********************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-var __resourceQuery = "?hot=true&hostname=localhost&port=3000";
+var __resourceQuery = "?hot=true&hostname=localhost&port=3030";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var webpack_hot_log_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! webpack/hot/log.js */ "./node_modules/webpack/hot/log.js");
 /* harmony import */ var webpack_hot_log_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(webpack_hot_log_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -98836,7 +98835,7 @@ class HDKey {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("1ca6beb5ecb9157fcf60")
+/******/ 		__webpack_require__.h = () => ("42967d6cf091b5eac0e3")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -99861,7 +99860,7 @@ class HDKey {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	__webpack_require__("./node_modules/webpack/hot/dev-server.js");
-/******/ 	__webpack_require__("./node_modules/webpack-dev-server/client/index.js?hot=true&hostname=localhost&port=3000");
+/******/ 	__webpack_require__("./node_modules/webpack-dev-server/client/index.js?hot=true&hostname=localhost&port=3030");
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/pages/Popup/index.jsx");
 /******/ 	
 /******/ })()

@@ -53,7 +53,7 @@ const printLine = line => {
     return;
   }
 
-  reactHotLoader.register(printLine, "printLine", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Content/modules/print.js");
+  reactHotLoader.register(printLine, "printLine", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Content/modules/print.js");
 })();
 
 ;
@@ -141,7 +141,7 @@ const printLine = line => {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("1ca6beb5ecb9157fcf60")
+/******/ 		__webpack_require__.h = () => ("42967d6cf091b5eac0e3")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/harmony module decorator */

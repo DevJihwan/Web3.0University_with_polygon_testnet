@@ -31094,8 +31094,8 @@ const _default = Newtab;
     return;
   }
 
-  reactHotLoader.register(Newtab, "Newtab", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Newtab/Newtab.jsx");
-  reactHotLoader.register(_default, "default", "/Users/hana/finalProject/BTAFinalProject-03/wallet/src/pages/Newtab/Newtab.jsx");
+  reactHotLoader.register(Newtab, "Newtab", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Newtab/Newtab.jsx");
+  reactHotLoader.register(_default, "default", "/Users/hana/CoP_final_project/Web3.0University_with_polygon_testnet/Wallet/src/pages/Newtab/Newtab.jsx");
 })();
 
 ;
@@ -31856,14 +31856,14 @@ var WebSocketClient = /*#__PURE__*/function () {
 
 /***/ }),
 
-/***/ "./node_modules/webpack-dev-server/client/index.js?hot=true&hostname=localhost&port=3000":
+/***/ "./node_modules/webpack-dev-server/client/index.js?hot=true&hostname=localhost&port=3030":
 /*!***********************************************************************************************!*\
-  !*** ./node_modules/webpack-dev-server/client/index.js?hot=true&hostname=localhost&port=3000 ***!
+  !*** ./node_modules/webpack-dev-server/client/index.js?hot=true&hostname=localhost&port=3030 ***!
   \***********************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-var __resourceQuery = "?hot=true&hostname=localhost&port=3000";
+var __resourceQuery = "?hot=true&hostname=localhost&port=3030";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var webpack_hot_log_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! webpack/hot/log.js */ "./node_modules/webpack/hot/log.js");
 /* harmony import */ var webpack_hot_log_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(webpack_hot_log_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -34115,7 +34115,7 @@ module.exports = __webpack_require__.p + "103b5fa18196d5665a7e.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("1ca6beb5ecb9157fcf60")
+/******/ 		__webpack_require__.h = () => ("42967d6cf091b5eac0e3")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/harmony module decorator */
@@ -35119,7 +35119,7 @@ module.exports = __webpack_require__.p + "103b5fa18196d5665a7e.svg";
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	__webpack_require__("./node_modules/webpack/hot/dev-server.js");
-/******/ 	__webpack_require__("./node_modules/webpack-dev-server/client/index.js?hot=true&hostname=localhost&port=3000");
+/******/ 	__webpack_require__("./node_modules/webpack-dev-server/client/index.js?hot=true&hostname=localhost&port=3030");
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/pages/Newtab/index.jsx");
 /******/ 	
 /******/ })()
