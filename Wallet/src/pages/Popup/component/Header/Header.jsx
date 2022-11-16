@@ -11,7 +11,7 @@ const Header = () => {
         <div className="Header">
             <div className='header-title' onClick={() => {
                 setPageState('MyWallet');
-            }}>SUI</div>
+            }}>Web3.0Uiversity</div>
 
             <div className='header-nav-box' onClick={async () => {
                     await Storage.clear();

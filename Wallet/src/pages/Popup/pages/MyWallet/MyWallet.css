@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    background: #d2e7f4;
+    background: #512772;
     padding: 60px 0 70px 0;
     box-sizing: border-box;
 }
@@ -14,12 +14,12 @@
 .mywallet-address {
     font-size: 14px;
     margin: 40px 0;
-    color: #898d93;
+    color: #e2e7ba;
     font-weight: 500;
 }
 
 .mywallet-balance {
-    color: #182435;
+    color: #e2e7ba;
     font-size: 28px;
     font-weight: 700;
 }

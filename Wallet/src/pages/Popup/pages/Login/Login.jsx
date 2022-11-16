@@ -33,7 +33,7 @@ const Login = () => {
     return (
         <div className="Login">
 
-            <div className="login-title">Welcome to Sui Wallet</div>
+            <div className="login-title">Welcome to Web3.0</div>
 
             <div className="login-sub-title">The decentralized web is waiting for the next</div>
 

@@ -20,7 +20,7 @@ const Home = () => {
         <div className="Home">
             <div className='home-title'>SUI</div>
 
-            <div className='home-sub-title-1'>Welcome to Sui Wallet</div>
+            <div className='home-sub-title-1'>Welcome to Web3.0 Wallet</div>
 
             <div className='home-sub-title-2'>Connecting you to the decentralized<br></br> web and SUI network</div>
 

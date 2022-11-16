@@ -5,6 +5,7 @@ import {pageState, pairState} from "../../recoil/index";
 import Header from '../../component/Header/Header';
 import Footer from '../../component/Footer/Footer';
 import { SDK } from '../../modules/sdk';
+import { Polygon } from '../../modules/Polygon';
 
 const SendToken = () => {
     const setPageState = useSetRecoilState(pageState);
@@ -33,7 +34,7 @@ const SendToken = () => {
 
     const getBalance = async (publickKey) => {
         setBalance('pending');
-        setBalance(await SDK.getBalance(publickKey));
+        setBalance(await Polygon.getTokenBalances());
     }
 
     /*
@@ -43,7 +44,8 @@ const SendToken = () => {
         try{
             setMessage("...");
             //공개키 메인에서 페이지 전환 시 전달 받을 것, 
-            const result = await SDK.sendToken(pair, pubkey, toAddress, amount);
+            // const result = await SDK.sendToken(pair, pubkey, toAddress, amount);
+            const result = await Polygon.sendMatic();
             setDisabled(true);
             setToAddress('');
             setAmount('');
@@ -99,7 +101,7 @@ return (
                 <div>Available</div>
                 <button className='refresh-btn' onClick={() => getBalance(pubkey)}>refresh</button>
             </div>
-            <div className='balance'>{balance === 'pending' ? '...' : '0.'+ balance}  SUI</div>
+            <div className='balance'>{balance === 'pending' ? '...' : '0.'+ balance}  DWT</div>
         </div>
 
         <div className='result-box'>
@@ -107,7 +109,7 @@ return (
             <div className="sent-message">{message}</div>   
         </div>
 
-        <button className={`submit-button-${disabled}`} onClick={send} type="submit">Transfer Sui</button>
+        <button className={`submit-button-${disabled}`} onClick={send} type="submit">Transfer DWT</button>
 
         <Footer />
     </div>);

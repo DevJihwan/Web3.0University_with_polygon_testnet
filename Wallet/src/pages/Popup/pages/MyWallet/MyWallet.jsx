@@ -31,8 +31,7 @@ const MyWallet = () => {
     }, [])
 
     const getBalance = async (addr) => {
-        setBalance(await SDK.getBalance(addr));
-        Polygon.getTokenBalances();
+        setBalance(await Polygon.getTokenBalances());
     }
 
     const faucet = async () => {
@@ -51,7 +50,7 @@ const MyWallet = () => {
 
             <div className='wallet-info-box'>
                 <div className='mywallet-address'>{address}</div>
-                <div className='mywallet-balance'>{balance === 'pending' ? '...' : '0.'+ balance}  SUI</div>
+                <div className='mywallet-balance'>{balance === 'pending' ? '...' : '0.'+ balance}  DWT</div>
             </div>
 
             <div>

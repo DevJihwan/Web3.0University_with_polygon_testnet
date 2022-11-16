@@ -108,6 +108,17 @@ var options = {
     extensions: fileExtensions
       .map((extension) => '.' + extension)
       .concat(['.js', '.jsx', '.ts', '.tsx', '.css']),
+    fallback: {
+        url: require.resolve("url"),
+        fs: false,
+        crypto: require.resolve("crypto-browserify"),
+        http: require.resolve("stream-http"),
+        https: require.resolve("https-browserify"),
+        os: require.resolve("os-browserify/browser"),
+        stream: require.resolve("stream-browserify"),
+        assert: require.resolve("assert"),
+        buffer: require.resolve("buffer"),
+      }
   },
   plugins: [
     new CleanWebpackPlugin({ verbose: false }),
@@ -189,6 +200,15 @@ var options = {
       filename: 'panel.html',
       chunks: ['panel'],
       cache: false,
+    }),
+    new webpack.ProvidePlugin({
+      Buffer: ['buffer', 'Buffer'],
+    }),
+    new webpack.ProvidePlugin({
+      process: 'process/browser',
+    }),
+    new webpack.ProvidePlugin({
+      utils: 'utils/browser',
     }),
   ],
   infrastructureLogging: {
