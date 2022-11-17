@@ -22,6 +22,7 @@ const SendToken = () => {
         const addressOfPub = SDK.getAddress(pair.getPublicKey());
         getBalance(addressOfPub);
         setPubkey(addressOfPub);
+        getNFTS()
     }, []);
 
     useEffect(() => {
@@ -45,7 +46,7 @@ const SendToken = () => {
             setMessage("...");
             //공개키 메인에서 페이지 전환 시 전달 받을 것, 
             // const result = await SDK.sendToken(pair, pubkey, toAddress, amount);
-            const result = await Polygon.sendMatic();
+            const result = await Polygon.sendDWT();
             setDisabled(true);
             setToAddress('');
             setAmount('');
@@ -82,6 +83,10 @@ const SendToken = () => {
         }catch(e){
             return false;
         }
+    }
+
+    const getNFTS = async() => {
+        await Polygon.getMyOwnNFTS();
     }
 
 

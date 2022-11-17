@@ -50,7 +50,7 @@ const MyWallet = () => {
 
             <div className='wallet-info-box'>
                 <div className='mywallet-address'>{address}</div>
-                <div className='mywallet-balance'>{balance === 'pending' ? '...' : '0.'+ balance}  DWT</div>
+                <div className='mywallet-balance'>{balance === 'pending' ? '...' : balance}  DWT</div>
             </div>
 
             <div>

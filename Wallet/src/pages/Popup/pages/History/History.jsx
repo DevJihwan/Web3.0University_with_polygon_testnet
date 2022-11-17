@@ -5,9 +5,9 @@ import {pageState, pairState} from "../../recoil/index";
 import Header from '../../component/Header/Header';
 import Footer from '../../component/Footer/Footer';
 import { useEffect } from 'react';
-import { SDK } from '../../modules/sdk';
 import { useState } from 'react';
 import HistoryItem from '../../component/HistoryItem/HistoryItem';
+import { Polygon } from '../../modules/Polygon';
 
 
 const History = () => {
@@ -23,13 +23,16 @@ const History = () => {
 
 
     const getHistory = async () => {
-        // const testaddress = '0xcd8c8083f7e60e3bda1ca5799e73544acb8582f4'
-        const historyList = await SDK.getHistoryTranssaction(SDK.getAddress(pair.getPublicKey()));
+        
+        // const historyList = await Polygon.getTransactionHistory();
         // const historyList = await SDK.getHistoryTranssaction(testaddress);
-        if(historyList.length === 0){
+
+        const historyList = await Polygon.getTransactionHistory();
+        
+        if(historyList.size === 0){
             setEmpty('empty');
         }
-        setHistoryList(historyList.reverse());
+        setHistoryList(historyList);
     }
 
     return (

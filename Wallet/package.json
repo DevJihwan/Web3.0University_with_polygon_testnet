@@ -20,16 +20,19 @@
     "@scure/bip39": "^1.1.0",
     "@truffle/hdwallet-provider": "^2.1.1",
     "alchemy-sdk": "^2.2.1",
+    "api": "^5.0.1",
     "crypto-js": "^4.1.1",
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.38",
+    "node-fetch": "^3.3.0",
     "process": "^0.11.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hot-loader": "^4.13.0",
     "react-scripts": "^4.0.3",
     "recoil": "^0.7.6",
-    "utils": "^0.3.1"
+    "utils": "^0.3.1",
+    "web3": "^1.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",
@@ -39,6 +42,7 @@
     "@types/chrome": "^0.0.177",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
+    "abi-decoder": "^2.4.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.3",
     "babel-preset-react-app": "^10.0.1",
