@@ -22,7 +22,6 @@ const SendToken = () => {
         const addressOfPub = SDK.getAddress(pair.getPublicKey());
         getBalance(addressOfPub);
         setPubkey(addressOfPub);
-        getNFTS()
     }, []);
 
     useEffect(() => {
@@ -83,10 +82,6 @@ const SendToken = () => {
         }catch(e){
             return false;
         }
-    }
-
-    const getNFTS = async() => {
-        await Polygon.getMyOwnNFTS();
     }
 
 

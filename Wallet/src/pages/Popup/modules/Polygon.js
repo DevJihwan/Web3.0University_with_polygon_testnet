@@ -13,7 +13,7 @@ const endPoint = "https://api-testnet.polygonscan.com/api";
 const testAddress = "0xC17Ff54A781D0959C56dFe1fA2fC3613715470cb";
 const myApikey = 'zhG4gMMMoaqP7hmMQ52Y5KqunBN4ylUE'
 const _tokenAddress = "0x695D3B70310AD28320d375D95d9458630DbB6E15";
-const _testNftAddress = "0xfbfeD9cfbcA305481bB9fcd42959A2baaC198bD9";
+const _testNftAddress = "0xfbfed9cfbca305481bb9fcd42959a2baac198bd9";
 
 use(Web3ClientPlugin)
 const matic = new POSClient();
@@ -128,23 +128,39 @@ export class Polygon{
     * 소유한 NFT 리스트 
     */
     static async getMyOwnNFTS(){
-
-        const url = "https://testnets-api.opensea.io/api/v1/assets";
-        axios.get(url,{
+                     
+        const url = "https://api-testnet.polygonscan.com/api";
+        const result = await axios.get(url,{
             params:{
-                owner: testAddress,
-                order_direction: 'desc',
-                offset: '0',
-                limit: '20',
-                include_orders: 'false'
-            },
+
+                module: 'account',
+                action: 'tokennfttx',
+                contractaddress: _testNftAddress,
+                address: testAddress,
+                page: 1,
+                offset: 100,
+                sort: 'asc',
+                apikey: myApikey//endpoint api key
+            }
         })
-        .then((result) => {
-            console.log("result : " + result);
-        })
-        .catch((error) => {
-            console.log("error : " + error);
-        })
+
+        const resutOfSize = result.data.result.length;
+        const list = [];
+
+        for(let i=0; i<resutOfSize; i++){
+            
+            if(result.data.result[i].contractAddress === _testNftAddress){
+                console.log(`${i}번째 block object : ${result.data.result[i].blockHash}`)
+                list.push({
+                    object: result.data.result[i]
+                })
+            }
+
+
+        }
+
+
+        console.log("result : " + result);
 
 
     }

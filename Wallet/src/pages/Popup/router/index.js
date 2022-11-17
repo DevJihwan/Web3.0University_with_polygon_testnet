@@ -10,6 +10,7 @@ import MyWallet from "../pages/MyWallet/MyWallet";
 import Login from "../pages/Login/Login";
 import ImportWallet from "../pages/ImportWallet/ImportWallet";
 import History from "../pages/History/History";
+import GetNfts from "../pages/Nfts/GetNfts";
 
 export const render = () => {
     const page = useRecoilValue(pageState);
@@ -23,7 +24,8 @@ export const render = () => {
         case 'MyWallet': return <MyWallet />
         case 'ImportWallet': return <ImportWallet />
         case 'History': return <History />
-        case 'SendToken': return <SendToken /> 
+        case 'SendToken': return <SendToken />
+        case 'GetNfts': return <GetNfts />
         default: return <div>no page</div>
     }
 }

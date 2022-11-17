@@ -17,6 +17,9 @@ const Footer = () => {
             <div className='footer-nav-box' onClick={async () => {setPageState('History');}}>
                 History
             </div>
+            <div className='footer-nav-box' onClick={async () => {setPageState('GetNfts');}}>
+                NFT
+            </div>
         </div>
     );
 };
