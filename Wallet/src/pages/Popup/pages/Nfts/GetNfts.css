@@ -1,0 +1,30 @@
+.GetNfts{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #512772;
+    padding: 60px 0 70px 0;
+    box-sizing: border-box;
+}
+
+.GetNfts-box {
+    height: 100%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    overflow-y: auto;
+}
+
+.GetNfts-box::-webkit-scrollbar {
+    width: 5px;
+}
+
+.GetNfts-box::-webkit-scrollbar-thumb {
+    height: 30%;
+    background: #e2e7ba;
+    border-radius: 10px;
+}
+
+.GetNfts-box::-webkit-scrollbar-track {
+    background: #d2e7f4;
+}

@@ -33,8 +33,12 @@ const SendToken = () => {
     }, [toAddress, amount]);
 
     const getBalance = async (publickKey) => {
+        let _balance = await Polygon.getTokenBalances();
+        if (_balance.length > 5){
+            _balance = _balance.slice(0,6);
+        }
         setBalance('pending');
-        setBalance(await Polygon.getTokenBalances());
+        setBalance(_balance);
     }
 
     /*
@@ -95,18 +99,18 @@ return (
 
         <input className='Send-Address-input' value={toAddress} onChange={(e) => setToAddress(e.target.value)} name="toaddress" placeholder="Address"></input>
         <input className='Send-Amuount-input' value={amount} onChange={(e) => setAmount(e.target.value)}name="amount" placeholder="Amount"></input>       
-        
+            
         <div className="balance-check">
             <div style={{'display': 'flex', 'justifyContent': 'space-between', 'alignItems': 'center'}}>
                 <div>Available</div>
                 <button className='refresh-btn' onClick={() => getBalance(pubkey)}>refresh</button>
             </div>
-            <div className='balance'>{balance === 'pending' ? '...' : '0.'+ balance}  DWT</div>
+            <div className='balance'>{balance === 'pending' ? '...' : balance}  DWT</div>
         </div>
 
         <div className='result-box'>
             <div>Result</div>
-            <div className="sent-message">{message}</div>   
+            <div className="sent-message">{message}</div>
         </div>
 
         <button className={`submit-button-${disabled}`} onClick={send} type="submit">Transfer DWT</button>

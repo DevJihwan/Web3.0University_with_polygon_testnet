@@ -161,6 +161,7 @@ export class Polygon{
 
 
         console.log("result : " + result);
+        return result;
 
 
     }

@@ -31,7 +31,11 @@ const MyWallet = () => {
     }, [])
 
     const getBalance = async (addr) => {
-        setBalance(await Polygon.getTokenBalances());
+        let _balance = await Polygon.getTokenBalances();
+        if (_balance.length > 5){
+            _balance = _balance.slice(0,6);
+        }
+        setBalance(_balance);
     }
 
     const faucet = async () => {
