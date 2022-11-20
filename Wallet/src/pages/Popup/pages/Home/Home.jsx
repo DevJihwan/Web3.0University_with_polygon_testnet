@@ -18,13 +18,13 @@ const Home = () => {
 
     return (
         <div className="Home">
-            <div className='home-title'>SUI</div>
+            <div className='home-title'>Web3.0 University</div>
 
-            <div className='home-sub-title-1'>Welcome to Web3.0 Wallet</div>
+            <div className='home-sub-title-1'>Welcome to Web3.0</div>
 
-            <div className='home-sub-title-2'>Connecting you to the decentralized<br></br> web and SUI network</div>
+            <div className='home-sub-title-2'>Connecting you to the decentralized<br></br> web and Polygon network</div>
 
-            <div className='home-sub-tilte-3'>- Buy, store, send and swap tokens</div>
+            <div className='home-sub-tilte-3'>- Sing, send, and get tokens</div>
             <div className='home-sub-tilte-3'>- Explore blockchain apps</div>
             <div className='home-sub-tilte-3'>- Find the best price every time</div>
 

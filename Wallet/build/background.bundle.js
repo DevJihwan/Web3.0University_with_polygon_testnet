@@ -77,7 +77,7 @@ console.log('Put the background scripts here.');
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("725434d35345f1f96a42")
+/******/ 		__webpack_require__.h = () => ("934cbed59b38625bddff")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

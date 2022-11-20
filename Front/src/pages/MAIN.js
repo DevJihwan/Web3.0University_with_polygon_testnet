@@ -9,78 +9,76 @@ import {
 import { ethers } from 'ethers';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header.js';
+import { Polygon } from '../modules/Polygon';
 
 const MAIN = () => {
     const navigation = useNavigate();
 
     const onSubmit = () => {
         console.log('강의 신청 버튼 클릭 시');
-        getWallet();
+        getCourseBtn();
     };
     // const [account, setAccount] = useState(null);
 
-    const getWallet = async () => {
-        try {
-            if (window.ethereum) {
-                const accounts = await window.ethereum.request({
-                    method: "eth_requestAccounts",
-                });
 
-                console.log(accounts[0]);
+    /*
+    *   onClikc event = 수강 신청 버튼 
+    */
+    const getCourseBtn = async () => {
+        console.log("========== Starting getCourseBtn method ==========");
+        navigation('/detail');
+        // if(checkStudent()){
+        //     //checkStudent()의 return value가 true일 경우 기수료 상태 
+        // }else{
 
-                // setAccount(accounts[0]);
-                /* 연결 테스트 코드
-                axios.get('http://localhost:3000/web3/userinfo')
-                .then((res) => console.log(res))
-                .catch((err) => console.log(err));
-                */
+        // }
 
-                
-                await axios.post('http://localhost:3000/web3/minting', {})
-                .then((res) => {
-                                console.log(res);
-                                // navigation('/detail');
-                });
 
-                const tokenId = await mintTokenContract.methods.tokenCounter().call();
-
-                console.log(tokenId);
-                
-                let data = {
-                    _pubkey: accounts[0],
-                    _course_name: "web3.0 지갑 만들기",
-                    _course_completion: tokenId-1
-                };
-                axios.post('http://localhost:3000/web3/register', data)
-                    .then((res) => {
-
-                                console.log(res);
-                                navigation('/detail');
-                          
-                    })
-                    .catch((err) => console.log(err));
-
-                //let test = await mintTokenContract.methods.mint(accounts[0], "ipfs://QmTy7h4rzcuQTWDaqVst7wsfs5DsM4QDh8fjqCewraHARK")
-                //console.log(test);
-
-            } else {
-                console.log('메타마스크 설치 안됨 => 설치페이지 이동');
-                window.open('https://metamask.io/download.html');
-            }
-        } catch (error) {
-            console.log('메타마스크 설치는 됐지만 주소 없을 경우');
-            console.log(error);
-        }
     }
+
+
+
+    /*
+    *   기존 수강 여부 체크 
+    */ 
+    const checkStudent = async() => {
+        
+        console.log("========== Starting checkStudent method ==========");
+        //return할 변수값 (true: 수료, false: 미수료)
+        let booleanValue; 
+        
+        //수료증 NFT 보유내역을 조회 (return type is array)
+        const checkResult = await Polygon.getMyOwnNFTS();
+
+        //Return된 array size를 체크
+        if(checkResult.size == 0){
+            booleanValue = false;
+        }else{
+            booleanValue = true;
+        }
+        console.log("booleanValue : " + booleanValue);
+        return booleanValue;
+    }
+
+
+
 
     return (
         <Container>
             <Header />
             <CardContainer>
                 <Card>
-                    Web3.0 지갑 만들기
+                    Web3.0 University 지갑 만들기
                 </Card>
                 <Button onClick={onSubmit}>GET STARTED</Button>
+                <Card>
+                    ERC20 Token 발행하기
+                </Card>
+                <Button >GET STARTED</Button>
+                <Card>
+                    ERC721 NFT 발행하기
+                </Card>
+                <Button >GET STARTED</Button>
             </CardContainer>
         </Container>
     )
@@ -91,15 +89,15 @@ export default MAIN;
 const Container = styled.div`
 width: 100vw;
 height: 100vh;
-background: rgb(163,147,245);
-background: linear-gradient(90deg, rgba(163,147,245,1) 0%, rgba(83,134,216,1) 100%);
+background: #512772;
+background: linear-gradient(90deg, rgba(163,147,245,1) 0%, #512772 100%);
 
 `
 const CardContainer = styled.div`
 height: 600px;
 display: flex;
 align-items: center;
-justify-content: center;
+justify-content: start;
 flex-direction: column;
 `
 
@@ -118,7 +116,7 @@ const Card = styled.div`
     font-size: 25px;
     font-weight: 600;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 `
 
 const Button = styled.div`

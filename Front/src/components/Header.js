@@ -18,9 +18,9 @@ const Header = () => {
     return (
         <>
             <HeaderContainer>
-                <HomeBtn onClick={() => navigate('/')}>WEB3 University</HomeBtn>
+                <HomeBtn onClick={() => navigate('/')}>Web3.0 University</HomeBtn>
                 {
-                    toggle ? <InputContainer> <Input onChange={(e) => setPublicKey(e.target.value)} value={publicKey} placeholder="공개키를 입력해주세요." /> <Button onClick={onSubmit}>submit</Button></InputContainer> : <Button onClick={onClick}>my page</Button>
+                    toggle ? <InputContainer> <Input onChange={(e) => setPublicKey(e.target.value)} value={publicKey} placeholder="공개키를 입력해주세요." /> <Button onClick={onSubmit}>Submit</Button></InputContainer> : <Button onClick={onClick}>my wallet</Button>
                 }
             </HeaderContainer>
         </>
@@ -52,13 +52,14 @@ justify-content: space-between;
 align-items: center;
 font-weight: 900;
 font-size: 20px; 
-background: rgb(163,147,245);
-background: linear-gradient(90deg, rgba(163,147,245,1) 0%, rgba(83,134,216,1) 100%);
+background: #512772;
+background: linear-gradient(90deg, rgba(163,147,245,1) 0%, #512772 100%);
 `
 const InputContainer = styled.div`
 display: flex;
 justify-content: space-between;
 align-items: center;
+font-size: 30px;
 `
 
 
@@ -75,4 +76,5 @@ font-size: 15px;
 
 const HomeBtn = styled.div`
 cursor: pointer;
+font-size: 30px;
 `

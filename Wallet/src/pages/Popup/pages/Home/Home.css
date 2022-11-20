@@ -7,14 +7,14 @@
 
 .home-title {
     font-size: 30px;
-    font-weight: 600;
-    color: #0284ad;
+    font-weight: 800;
+    color: #512772;
     margin: 60px 0 20px 0;
 }
 
 .home-sub-title-1 {
     font-size: 26px;
-    font-weight: 700;
+    font-weight: 500;
     color: #3d444d;
     margin-bottom: 30px;
 }
@@ -36,7 +36,7 @@
     margin: auto 25px 20px 25px;
     align-items: center;
     border-radius: 12px;
-    background-color: #0284ad;
+    background-color: #512772;
     display: flex;
     justify-content: center;
     font-weight: 600;
