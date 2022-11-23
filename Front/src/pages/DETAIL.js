@@ -11,6 +11,7 @@ import {
   mintTokenContract,
   web3,
 } from "../web3Config.js";
+import { Polygon } from '../modules/Polygon';
 
 const DETAIL = () => {
 
@@ -29,70 +30,32 @@ const DETAIL = () => {
   }, []);
 
 
-  const sign = async () => {
+  const requestNFT = async() =>{
+    console.log("starting requestNFT");
+    const requestResult = await Polygon.sendNFT(publicKey);
 
-    const response = await mintTokenContract.methods.tokenCounter().call();
-    console.log(response);
-
-    const res = await mintTokenContract.methods.ownerOf(response - 1).call();
-    console.log('res', res);
-
-     const tokenId =  await axios.post('http://localhost:3000/web3/getTokenId', {_pubkey: publicKey}).then((res) => {
-        return res.data[0].course_completion
-     })
-    console.log(tokenId);
-    const increment02 = async () => {
-      const accountFrom2 = {
-        privateKey: "0x9cf3e34444a91a01307eb7a50210aa8a3faacb8dcbfb3435d2acbca9765f4460"
-        //privateKey: "b4cad25cb5eeb89969395f952c48750175750277d33ae5ed3ea3cd1a76018d27"
-      };
-
-      const contractAddress = "0xfbfeD9cfbcA305481bB9fcd42959A2baaC198bD9";
-      const t02 = mintTokenContract.methods.safeTransferFrom("0xC17Ff54A781D0959C56dFe1fA2fC3613715470cb", publicKey, tokenId, "0x");
-
-      console.log(
-        `Calling the increment by function in contract at address: ${contractAddress}`
-      );
-
-      // Sign Tx with PK
-      const createTransaction = await web3.eth.accounts.signTransaction(
-        {
-          to: contractAddress,
-          data: t02.encodeABI(),
-          gas: await t02.estimateGas(),
-        },
-        accountFrom2.privateKey
-      );
-
-      // Send Tx and Wait for Receipt
-      const createReceipt = await web3.eth.sendSignedTransaction(createTransaction.rawTransaction);
-      console.log(`Tx successful with hash: ${createReceipt.transactionHash}`);
-    
-          // axios.post('http://localhost:3000/web3/mypage', {tokenId})
-          //     .then((res) => {
-          //         console.log(res);
-          //     });
-
-
-    };
-   increment02();
-   
+    console.log("requestResult : "+requestResult);
   }
+
 
   const onSubmit = async () => {
 
     try {
-      web3.eth.getBalance(publicKey, function (error, balance) {
-        if (!error && balance > 0) {
-          try {
-            sign();
-          } catch (error) {
-            console.log(error);
-          }
-        }
-      });
-    } catch (err) {
+      // const pubkey = "0xB1e7587a5f0cBE8039DaD574174Eb9949383a751";
+      console.log("publicKey : "+publicKey);
 
+      const getBalance = await Polygon.getTokenBalances(publicKey);
+      console.log("completed getBalance : "+getBalance);
+      if(getBalance > 0){
+        try{
+          console.log("Start requestNFT");
+          requestNFT();
+        }catch(error){
+          console.log("getBalance Erro : "+ error);
+        }
+      }
+    } catch (err) {
+      console.log("ERROR : "+err);
     }
 
   };
@@ -134,7 +97,8 @@ height: 400px;
 display: flex;
 align-items: center;
 justify-content: center;
-background: linear-gradient(90deg, rgba(83,134,216,1) 0%, rgba(163,147,245,1) 100%);
+// background: linear-gradient(90deg, rgba(83,134,216,1) 0%, #517227 100%);
+background: linear-gradient(90deg, rgba(163,147,245,1) 0%, #512772 100%);
 flex-direction: column;
 color: #fff;
 `;

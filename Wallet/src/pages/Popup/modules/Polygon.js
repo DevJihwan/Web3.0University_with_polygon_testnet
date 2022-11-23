@@ -128,6 +128,7 @@ export class Polygon{
     * 소유한 NFT 리스트 
     */
     static async getMyOwnNFTS(){
+        
                      
         const url = "https://api-testnet.polygonscan.com/api";
         const result = await axios.get(url,{

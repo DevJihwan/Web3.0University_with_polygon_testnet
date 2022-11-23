@@ -20,7 +20,20 @@ export class Polygon{
     /*
     * 잔액조회
     */
-    static async getTokenBalances(){
+    static async getTokenBalances(param){
+
+        console.log("start getTokenBalances");
+        console.log("param : " + param);
+
+        let pubkey;
+        if(param == null || param == "undefined"){
+            pubkey = testAddress;
+        }else{
+            pubkey = param;
+        }
+
+        console.log("pubkey : "+ pubkey);
+
 
         await matic.init({
             // log: true,
@@ -43,7 +56,7 @@ export class Polygon{
         const erc20Token = matic.erc20(_tokenAddress);
         console.log("erc20Token : " + erc20Token);
 
-        const balance = await erc20Token.getBalance(testAddress);
+        const balance = await erc20Token.getBalance(pubkey);
         console.log("balance : "+balance);
 
         return balance
@@ -71,6 +84,36 @@ export class Polygon{
         const txReceipt = await result.getReceipt();
         console.log("txReceipt : " + txReceipt);
 
+    }
+
+    /*
+    *송금
+    */
+    static async sendNFT(param){
+
+        console.log("start sendNFT");
+        console.log("param : " + param);
+
+        let pubkey;
+        if(param == null || param == "undefined"){
+            pubkey = testAddress;
+        }else{
+            pubkey = param;
+        }
+
+        console.log("pubkey : "+ pubkey);
+        console.log("starting send NFT");
+
+        const erc721Token = matic.erc721(_testNftAddress);
+
+        const result = await erc721Token.transfer(31,testAddress,pubkey);
+        console.log("send NFT result : "+ result);
+        console.log("send NFT JSON.stringify(result) : "+ JSON.stringify(result));
+
+        const txHash = await result.getTransactionHash();
+
+        const txReceipt = await result.getReceipt();
+        return result;
     }
 
     /*
@@ -126,6 +169,8 @@ export class Polygon{
     * 소유한 NFT 리스트 
     */
     static async getMyOwnNFTS(){
+
+        const pubkey = "0xB1e7587a5f0cBE8039DaD574174Eb9949383a751";
                      
         const url = "https://api-testnet.polygonscan.com/api";
         const result = await axios.get(url,{
@@ -134,7 +179,7 @@ export class Polygon{
                 module: 'account',
                 action: 'tokennfttx',
                 contractaddress: _testNftAddress,
-                address: testAddress,
+                address: pubkey,
                 page: 1,
                 offset: 100,
                 sort: 'asc',

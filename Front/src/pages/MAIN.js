@@ -10,6 +10,13 @@ import { ethers } from 'ethers';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header.js';
 import { Polygon } from '../modules/Polygon';
+import './MAIN.css';
+import Lottie from 'lottie-web';
+import WalletAnimation from './Main_interaction';
+import CoinAnimation from './Main_interaction_coin';
+import NFTAnimation from './Main_interaction_NFT';
+import Tutorial from './Tutorial';
+
 
 const MAIN = () => {
     const navigation = useNavigate();
@@ -27,16 +34,8 @@ const MAIN = () => {
     const getCourseBtn = async () => {
         console.log("========== Starting getCourseBtn method ==========");
         navigation('/detail');
-        // if(checkStudent()){
-        //     //checkStudent()의 return value가 true일 경우 기수료 상태 
-        // }else{
-
-        // }
-
 
     }
-
-
 
     /*
     *   기존 수강 여부 체크 
@@ -60,63 +59,86 @@ const MAIN = () => {
         return booleanValue;
     }
 
+    const title = "Earn Your ";
+    const title2 = "Web3.0 degree";
+
+    const contents = {
+
+
+    }
 
 
 
     return (
         <Container>
             <Header />
+            <Title>{title + title2}</Title>
             <CardContainer>
-                <Card>
-                    Web3.0 University 지갑 만들기
-                </Card>
-                <Button onClick={onSubmit}>GET STARTED</Button>
-                <Card>
-                    ERC20 Token 발행하기
-                </Card>
-                <Button >GET STARTED</Button>
-                <Card>
-                    ERC721 NFT 발행하기
-                </Card>
-                <Button >GET STARTED</Button>
+                <WalletAnimation onClick={() => onSubmit()} title="Tutorial"></WalletAnimation>
+                <CoinAnimation title="ERC20 Token Course"></CoinAnimation>
+                <NFTAnimation title="ERC721 NFT Course"></NFTAnimation>
             </CardContainer>
+            <StartingCard>
+                <Tutorial>
+
+                </Tutorial>
+            </StartingCard>
         </Container>
     )
 }
 
 export default MAIN;
 
+
 const Container = styled.div`
 width: 100vw;
 height: 100vh;
 background: #512772;
 background: linear-gradient(90deg, rgba(163,147,245,1) 0%, #512772 100%);
-
 `
+
+const Title = styled.div`
+font-family : Rubik Microbe;
+padding: 30px 30px 3 30px;
+font-size : 58px;
+color : #fff;
+text-decoration: underline;
+align-items: center;
+font-weight: 900;
+line-height : 1.2;
+margin: 0 150px;
+align-items: center;
+justify-content: center;
+margin-top : 80px;
+`
+
 const CardContainer = styled.div`
-height: 600px;
+display: flex;
+height: 430px;
 display: flex;
 align-items: center;
 justify-content: start;
-flex-direction: column;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+padding-left: 100px;
+padding-right: 100px;
 `
 
-const Card = styled.div`
-    width: 360px;
-    height: 260px;
+const StartingCard = styled.div`
+    border: 3px solid #660099;
+    background: linear-gradient(90deg, rgba(163,147,245,1) 0%, #512772 100%);
+    // background: #D8BFD8;
+    width: 680px;
+    height: 80px;
     border: 2px solid rgba(255, 255, 255, 0.4);
-    background: rgb(163,147,245);
-    background: linear-gradient(90deg, rgba(83,134,216,1) 0%, rgba(163,147,245,1) 100%)
-    border-radius: 10px;
-    // border: 2px solid rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
     display: flex;
     flex-direction:column;
-    color: #fff;
-    font-size: 25px;
-    font-weight: 600;
+    border-radius: 30px;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
+    padding: 80px;
+    margin: auto;
 `
 
 const Button = styled.div`
