@@ -35,7 +35,7 @@ const ConfirmRecoveryPhrase = () => {
             <div className='text-red'>WARNING</div>
             <div className='text-red'>Never disclose your secret recovery phrase. Anyone with the passphrase can take over your account forever.</div>
 
-            <button className="crp-next-btn" onClick={confirm}>Open Sui Wallet</button>
+            <button className="crp-next-btn" onClick={confirm}>Open Wallet</button>
 
         </div>
     );

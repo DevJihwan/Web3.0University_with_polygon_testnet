@@ -28,3 +28,13 @@
 .GetNfts-box::-webkit-scrollbar-track {
     background: #d2e7f4;
 }
+
+.GetNfts-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    height: 100%;
+    color: #e2e7ba;
+}

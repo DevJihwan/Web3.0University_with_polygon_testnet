@@ -5,6 +5,7 @@ import { Web3ClientPlugin} from "@maticnetwork/maticjs-web3";
 import HDWalletProvider from "@truffle/hdwallet-provider";
 import * as axios from 'axios';
 import * as decode from 'web3-eth-abi';
+import * as Web3 from 'web3';
 
 
 const privateKey="9cf3e34444a91a01307eb7a50210aa8a3faacb8dcbfb3435d2acbca9765f4460"
@@ -18,11 +19,28 @@ const _testNftAddress = "0xfbfed9cfbca305481bb9fcd42959a2baac198bd9";
 use(Web3ClientPlugin)
 const matic = new POSClient();
 export class Polygon{
+
+
+    /*
+    *  keypair
+    */
+    static async getPair(mnemonics){
+        console.log("start getPair");
+        const seed64Bytes = await bip39.mnemonicToSeed(mnemonics);
+        const web3 = new Web3(TESTNET_RPC);
+
+        const account = web3.eth.accounts.create(seed64Bytes);
+        // const account = await web3.eth.personal.newAccount(seed64Bytes);
+        console.log("account : "+ account);
+
+        return account;
+
+    }
     
     /*
     * 잔액조회
     */
-    static async getTokenBalances(){
+    static async getTokenBalances(param){
 
         await matic.init({
             // log: true,
@@ -42,10 +60,12 @@ export class Polygon{
             }
         });
         
+        console.log("start get balance erc20 token");
+
         const erc20Token = matic.erc20(_tokenAddress);
         console.log("erc20Token : " + erc20Token);
 
-        const balance = await erc20Token.getBalance(testAddress);
+        const balance = await erc20Token.getBalance(param);
         console.log("balance : "+balance);
 
         return balance
@@ -78,14 +98,14 @@ export class Polygon{
     /*
     *거래내역
     */
-    static async getTransactionHistory(){
+    static async getTransactionHistory(param){
 
         const url = "https://api-testnet.polygonscan.com/api";
         const result = await axios.get(url,{
             params:{
                 module: 'account',
                 action: 'txlist',
-                address: testAddress,
+                address: param,
                 startblock: 0,
                 endblock: 99999999,
                 page: 1,
@@ -127,7 +147,7 @@ export class Polygon{
     /*
     * 소유한 NFT 리스트 
     */
-    static async getMyOwnNFTS(){
+    static async getMyOwnNFTS(param){
         
                      
         const url = "https://api-testnet.polygonscan.com/api";
@@ -137,7 +157,7 @@ export class Polygon{
                 module: 'account',
                 action: 'tokennfttx',
                 contractaddress: _testNftAddress,
-                address: testAddress,
+                address: param,
                 page: 1,
                 offset: 100,
                 sort: 'asc',

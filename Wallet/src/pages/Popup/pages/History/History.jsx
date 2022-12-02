@@ -27,7 +27,7 @@ const History = () => {
         // const historyList = await Polygon.getTransactionHistory();
         // const historyList = await SDK.getHistoryTranssaction(testaddress);
 
-        const historyList = await Polygon.getTransactionHistory();
+        const historyList = await Polygon.getTransactionHistory(pair.address);
         
         if(historyList.size === 0){
             setEmpty('empty');

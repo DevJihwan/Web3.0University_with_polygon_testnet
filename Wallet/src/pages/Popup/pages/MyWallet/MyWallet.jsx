@@ -17,7 +17,7 @@ const MyWallet = () => {
     const [faucetStatus, setFaucetStatus] = useState('');
 
     useEffect(() => {
-        const addressOfPub = SDK.getAddress(pair.getPublicKey());
+        const addressOfPub = pair.address;
         setAddress(addressOfPub);
         getBalance(addressOfPub);
         const interval = setInterval(async () => {
@@ -31,7 +31,7 @@ const MyWallet = () => {
     }, [])
 
     const getBalance = async (addr) => {
-        let _balance = await Polygon.getTokenBalances();
+        let _balance = await Polygon.getTokenBalances(address);
         if (_balance.length > 5){
             _balance = _balance.slice(0,6);
         }

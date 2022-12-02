@@ -8,6 +8,7 @@ import { pageState } from '../../recoil';
 import './ImportWallet.css';
 import CryptoJS from "crypto-js";
 import { SDK } from '../../modules/sdk';
+import { Polygon } from '../../modules/Polygon';
 
 const ImportWallet = () => {
     const setPage = useSetRecoilState(pageState);
@@ -47,7 +48,9 @@ const ImportWallet = () => {
                 return;
             }
 
-            const pair = await SDK.getPair(mnemonic);
+            // const pair = await SDK.getPair(mnemonic);
+            console.log("ImportWallet page Mnemonic is : " + mnemonic);
+            const pair = await Polygon.getPair(mnemonic);
             const encryptMnemonic = CryptoJS.AES.encrypt(mnemonic, password).toString();
             await Storage.setEncryptMnemonic(encryptMnemonic);
 

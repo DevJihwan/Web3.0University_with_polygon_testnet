@@ -19,7 +19,9 @@ const GetNfts = () => {
 
 
     const getNFTS = async() => {
-        const tokenResult = await Polygon.getMyOwnNFTS();
+        const toAddress = "0xE08ca9ab888f39E5c63b194aeDe313B09A35A6Dd";
+
+        const tokenResult = await Polygon.getMyOwnNFTS(toAddress);
         const tokenList = tokenResult.data.result.length;
         
         console.log("tokenResult : " + tokenResult);

@@ -12,6 +12,8 @@ import {
   web3,
 } from "../web3Config.js";
 import { Polygon } from '../modules/Polygon';
+import { confirmAlert } from 'react-confirm-alert';
+import 'react-confirm-alert/src/react-confirm-alert.css';
 
 const DETAIL = () => {
 
@@ -40,23 +42,39 @@ const DETAIL = () => {
 
   const onSubmit = async () => {
 
-    try {
-      // const pubkey = "0xB1e7587a5f0cBE8039DaD574174Eb9949383a751";
-      console.log("publicKey : "+publicKey);
-
-      const getBalance = await Polygon.getTokenBalances(publicKey);
-      console.log("completed getBalance : "+getBalance);
-      if(getBalance > 0){
-        try{
-          console.log("Start requestNFT");
-          requestNFT();
-        }catch(error){
-          console.log("getBalance Erro : "+ error);
+    confirmAlert({
+      title: 'Great! Passed this course!',
+      message: 'Go to Request NFT',
+      buttons: [
+        {
+          label: 'Yes',
+          onClick: () => alert('Click Yes')
+        },
+        {
+          label: 'No',
+          onClick: () => alert('Click No')
         }
-      }
-    } catch (err) {
-      console.log("ERROR : "+err);
-    }
+      ]
+    });
+
+
+    // try {
+    //   // const pubkey = "0xB1e7587a5f0cBE8039DaD574174Eb9949383a751";
+    //   console.log("publicKey : "+publicKey);
+
+    //   const getBalance = await Polygon.getTokenBalances(publicKey);
+    //   console.log("completed getBalance : "+getBalance);
+    //   if(getBalance > 0){
+    //     try{
+    //       console.log("Start requestNFT");
+    //       requestNFT();
+    //     }catch(error){
+    //       console.log("getBalance Erro : "+ error);
+    //     }
+    //   }
+    // } catch (err) {
+    //   console.log("ERROR : "+err);
+    // }
 
   };
 

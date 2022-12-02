@@ -6,6 +6,7 @@ import { pageState, pairState } from '../../recoil';
 import CryptoJS from "crypto-js";
 import './Login.css';
 import { SDK } from '../../modules/sdk';
+import { Polygon } from '../../modules/Polygon';
 
 const Login = () => {
     const setPage = useSetRecoilState(pageState);
@@ -20,7 +21,10 @@ const Login = () => {
             const bytes = CryptoJS.AES.decrypt(encryptMnemonic, password);
             const mnemonic = bytes.toString(CryptoJS.enc.Utf8);
 
-            const pair = await SDK.getPair(mnemonic);
+            // const pair = await SDK.getPair(mnemonic);
+
+            console.log("Login page Mnemonic is : " + mnemonic);
+            const pair = await Polygon.getPair(mnemonic);
             setPair(pair);
             setError(false);
             setPage('MyWallet');

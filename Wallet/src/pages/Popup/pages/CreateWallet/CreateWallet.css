@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    background: rgb(210, 231, 244);
+    background: #512772;
     padding: 0 30px 0 30px;
 }
 
@@ -14,7 +14,7 @@
 .create-wallet-title {
     font-size: 28px;
     font-weight: 700;
-    color: #3d444d;
+    color: #e2e7ba;
     margin: 60px 0;
 }
 
@@ -29,6 +29,7 @@
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 5px;
+    color: #e2e7ba;
 }
 
 .password-input {
@@ -75,21 +76,23 @@
 
 .agree-box-title {
     font-size: 14px;
+    color: #e2e7ba;
 }
 
 .create-btn {
-    width: 100%;
-    height: 40px;
+    margin: auto 0 20px 0;
+    align-items: center;
     border-radius: 12px;
-    color: white;
-    background-color: gray;
-    border: none;
-    cursor: pointer;
+    background-color: #e2e7ba;
+    display: flex;
+    justify-content: center;
     font-weight: 600;
     font-size: 14px;
     line-height: 90%;
-    pointer-events: none;
-    margin: auto 0 20px 0;
+    border: none;
+    color: #512772;
+    height: 40px;
+    cursor: pointer;
 }
 
 .create-btn:hover {
