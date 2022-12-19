@@ -22,7 +22,7 @@ const MyWallet = () => {
         getBalance(addressOfPub);
         const interval = setInterval(async () => {
             setFaucetStatus('');
-            setBalance(await SDK.getBalance(addressOfPub));
+            setBalance(await Polygon.getTokenBalances(addressOfPub));
         }, 5000)
 
         return () => {

@@ -24,7 +24,8 @@ const Login = () => {
             // const pair = await SDK.getPair(mnemonic);
 
             console.log("Login page Mnemonic is : " + mnemonic);
-            const pair = await Polygon.getPair(mnemonic);
+            //const pair = await Polygon.getPair(mnemonic);
+            const pair = await Polygon.getPairEther(mnemonic);
             setPair(pair);
             setError(false);
             setPage('MyWallet');

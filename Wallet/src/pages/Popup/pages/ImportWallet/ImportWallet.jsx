@@ -50,7 +50,8 @@ const ImportWallet = () => {
 
             // const pair = await SDK.getPair(mnemonic);
             console.log("ImportWallet page Mnemonic is : " + mnemonic);
-            const pair = await Polygon.getPair(mnemonic);
+            //const pair = await Polygon.getPair(mnemonic);
+            const pair = await Polygon.getPairEther(mnemonic);
             const encryptMnemonic = CryptoJS.AES.encrypt(mnemonic, password).toString();
             await Storage.setEncryptMnemonic(encryptMnemonic);
 

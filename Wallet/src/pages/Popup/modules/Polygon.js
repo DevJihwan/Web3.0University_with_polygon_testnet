@@ -6,6 +6,7 @@ import HDWalletProvider from "@truffle/hdwallet-provider";
 import * as axios from 'axios';
 import * as decode from 'web3-eth-abi';
 import * as Web3 from 'web3';
+import * as ethers from 'ethers';
 
 
 const privateKey="9cf3e34444a91a01307eb7a50210aa8a3faacb8dcbfb3435d2acbca9765f4460"
@@ -35,6 +36,21 @@ export class Polygon{
 
         return account;
 
+    }
+
+    static async getPairEther(mnemonics){
+        const _wallet = ethers.Wallet.fromMnemonic(mnemonics);
+        console.log("_wallet : "+ _wallet);
+
+        return _wallet;
+    }
+
+        /*
+    * 공개키 노출 
+    */
+    static getAddress(wallet) {
+        const address = wallet.address
+        return address;
     }
     
     /*
@@ -68,23 +84,41 @@ export class Polygon{
         const balance = await erc20Token.getBalance(param);
         console.log("balance : "+balance);
 
-        return balance
+        return Web3.utils.fromWei(balance, 'ether');
 
     }
     /*
     *송금
     */
-    static async sendDWT(){
+    static async sendDWT(fromAddress, fromAddressPK, toAddress, amount){
+
+        await matic.init({
+            // log: true,
+            network: 'testnet',
+            version: 'mumbai',
+            parent: {
+                provider: new HDWalletProvider(fromAddressPK, TESTNET_RPC),
+                defaultConfig: {
+                    from : fromAddress
+                }
+            },
+            child: {
+              provider: new HDWalletProvider(fromAddressPK, TESTNET_RPC),
+              defaultConfig: {
+                    from: fromAddress
+              }
+            }
+        });
 
         const erc20Token = matic.erc20(_tokenAddress);//token instance 생성
         console.log("erc20Token : " + erc20Token);
 
-        //test를 위한 데이터
-        const testToAddress = "0xE08ca9ab888f39E5c63b194aeDe313B09A35A6Dd";
-        const testAmount = 10;
+        // //test를 위한 데이터
+        // const testToAddress = "0xE08ca9ab888f39E5c63b194aeDe313B09A35A6Dd";
+        // const testAmount = 10;
 
         //parameter (to, amount)
-        const result = await erc20Token.transfer(testAmount, testToAddress);
+        const result = await erc20Token.transfer(amount, toAddress);
         console.log("result : " + result);
 
         const txHash = await result.getTransactionHash();
@@ -92,6 +126,8 @@ export class Polygon{
 
         const txReceipt = await result.getReceipt();
         console.log("txReceipt : " + txReceipt);
+
+        return result;
 
     }
 

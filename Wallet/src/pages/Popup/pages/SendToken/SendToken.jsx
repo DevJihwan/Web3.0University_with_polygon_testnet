@@ -19,9 +19,9 @@ const SendToken = () => {
     const [message, setMessage] = useState('');
 
     useEffect(() => {
-        const addressOfPub = SDK.getAddress(pair.getPublicKey());
-        getBalance(addressOfPub);
-        setPubkey(addressOfPub);
+        const addressOfPub = Polygon.getAddress(pair);
+        getBalance(pair.address);
+        setPubkey(pair.publickKey);
     }, []);
 
     useEffect(() => {
@@ -33,10 +33,8 @@ const SendToken = () => {
     }, [toAddress, amount]);
 
     const getBalance = async (publickKey) => {
-        let _balance = await Polygon.getTokenBalances();
-        if (_balance.length > 5){
-            _balance = _balance.slice(0,6);
-        }
+        let _balance = await Polygon.getTokenBalances(publickKey);
+
         setBalance('pending');
         setBalance(_balance);
     }
@@ -49,7 +47,7 @@ const SendToken = () => {
             setMessage("...");
             //공개키 메인에서 페이지 전환 시 전달 받을 것, 
             // const result = await SDK.sendToken(pair, pubkey, toAddress, amount);
-            const result = await Polygon.sendDWT();
+            const result = await Polygon.sendDWT(pair.address, pair.privateKey, toAddress, amount);
             setDisabled(true);
             setToAddress('');
             setAmount('');
@@ -103,7 +101,7 @@ return (
         <div className="balance-check">
             <div style={{'display': 'flex', 'justifyContent': 'space-between', 'alignItems': 'center'}}>
                 <div>Available</div>
-                <button className='refresh-btn' onClick={() => getBalance(pubkey)}>refresh</button>
+                <button className='refresh-btn' onClick={() => getBalance(pair.address)}>refresh</button>
             </div>
             <div className='balance'>{balance === 'pending' ? '...' : balance}  DWT</div>
         </div>
